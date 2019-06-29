@@ -1,0 +1,350 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+.header{
+    width: 100%;
+    overflow: hidden;
+    height: 1rem;
+    background-color: #3db1fa;
+}
+.header_top{
+    width: 95%;
+    margin: 0 auto;
+    padding: 0.2rem 0.1rem;
+}
+.header_top_content{
+    width: 100%;
+    display: inline-flex;
+}
+.login,.logo,.register{
+    width: 33.33%;
+}
+.header_top a{
+    font-size: 0.3rem;
+    color: white;
+    line-height: 0.5591rem;
+}
+.logo img{
+    width: 1.86rem;
+    height: 0.56rem;
+}
+.swiper{
+    width: 100%;
+    height: 3.4496rem;
+}
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    height: 3.4496rem !important;
+}
+.swiper-slide {
+    width: 100%;
+    text-align: center;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 3.4496rem;
+}
+.notice{
+    width: 100%;
+    height: 0.8448rem;
+    background-color: white;
+}
+.notice_content{
+    width: 92%;
+    height: 0.4448rem;
+    margin: 0 auto;
+    padding: 0.2rem 0;
+}
+.notice_content img{
+    width: 0.44rem;
+    height: 0.38rem;
+    float: left;
+}
+.notice_content ul{
+    float: left;
+    position: relative;
+    padding-left: 0.1rem;
+}
+.notice_content ul li{
+    color: black;
+    font-size: 0.3rem;
+    height: 0.38rem;
+    line-height: 0.38rem;
+}
+.blank{
+    width: 100%;
+    height: 0.2rem;
+    background-color: #a9a9a92e;
+}
+.data{
+    width: 100%;
+    height: 0.9216rem;
+    background-color: white;
+}
+.data_list{
+    width: 100%;
+    height: 0.5216rem;
+    padding: 0.2rem 0;
+    display: inline-flex;
+}
+.data_list li{
+    width: 33.33%;
+    text-align: center;
+}
+.data_list li h5{
+    font-size: 0.25rem;
+    font-weight: bold;
+    color: #3DB1FA;
+   
+}
+.data_list li p{
+    font-size: 0.2rem;
+    color: darkgray;
+    padding-top: 0.15rem;
+    
+}
+.json{
+    width: 100%;
+    height: auto;
+    background-color: #a9a9a92e;
+}
+.enter_btn{
+    width: 94%;
+    margin: 0 auto;
+    padding: 0.2rem 0;
+}
+.enter_btn button{
+    width: 100%;
+    height: 0.6912rem;
+    line-height: 0.6912rem;
+    background-color:#3DB1FA;
+    border: 0;
+    outline: none; 
+    font-size: 0.35rem;
+    color: white;
+    text-align: center;
+    border-radius: 0.15rem;
+}
+.adv{
+    width: 94%;
+    margin: 0 3%;  
+}
+.adv_top{
+    display: inline-flex;
+}
+.adv_top img{
+    width: 0.44rem;
+    height: 0.40rem;
+}
+.adv_top p{
+    font-size: 0.3rem;
+    color: darkgray;
+    padding-left: 0.1rem;
+}
+.hope,.dont{
+    width: 100%;
+    height: 2.5rem;
+    margin: 0.1rem 0;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 0.15rem;
+}
+.hope_content , .dont_content{
+    width: 100%;
+    height: 2.5rem;
+    display: inline-flex;
+}
+.hope_left,.dont_left{
+    width: 80%;
+    padding-top: 0.2rem;
+    padding-bottom: 0.3rem;
+}
+
+.dont_left_top{
+    display: inline-flex;
+}
+.dont_left_top img{
+    width: 0.36rem;
+    height: 0.36rem;
+    padding-left: 0.1rem;
+}
+.dont_left_top p{
+    padding-left: 0.1rem;
+    color: black;
+    font-size: 0.35rem;
+}
+.hope_left p,.dont_left span{
+    padding-left: 0.1rem;
+    color: black;
+    font-size: 0.35rem;
+}
+.hope_right,.dont_right{
+    width: 10%;
+    margin-left: 0.7rem;
+    background-color: #3DB1FA;
+    border-radius: 0.1rem;
+}
+.hope_right img,.dont_right img{
+    padding-left: 0.15rem;
+}
+.hope_list,
+.dont_list,
+.dont1_list,
+.dont2_list,
+.dont3_list,
+.dont4_list,
+.dont5_list,
+.dont6_list,
+.dont7_list,
+.dont8_list,
+.dont9_list,
+.dont10_list,
+.dont11_list,
+.dont12_list{
+    width: 100%;
+    padding: 0.3rem;
+}
+.dont_list li,
+.dont1_list li,
+.dont2_list li,
+.dont3_list li,
+.dont4_list li,
+.dont5_list li,
+.dont6_list li,
+.dont7_list li,
+.dont8_list li,
+.dont9_list li,
+.dont10_list li,
+.dont11_list li,
+.dont12_list li{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.hope_list li{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+
+.hope_list li span,.dont_left li span{
+    color: darkgray;
+    font-size: 0.25rem;
+}
+.hope_list li p,
+.dont_list li p,
+.dont1_list li p,
+.dont2_list li p,
+.dont3_list li p,
+.dont4_list li p,
+.dont5_list li p,
+.dont6_list li p,
+.dont7_list li p,
+.dont8_list li p,
+.dont9_list li p,
+.dont10_list li p,
+.dont11_list li p,
+.dont12_list li p{
+    color: darkgray;
+    padding-top: 0.4rem;
+    font-size: 0.25rem;
+}
+.redbl span{
+    display: block;
+    width: 0.9216rem;
+    height: 0.9216rem;
+    background: #e1e1e1;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 4px;
+    border-radius: 50%;
+    border: 2px solid #3DB1FA;
+    overflow: hidden; 
+}
+.redbl span img{
+    display: block;
+    width: 1.1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.redbl span h6{
+    font-size: 0.3rem;
+    color: black;
+    line-height: 0.8rem;
+    padding-top: 0 !important;
+   
+}
+.json_nav{
+    width: 100%;
+    height: 1rem;
+    background-color: white;
+}
+.json_nav_list{
+    width: 100%;
+    height: 1rem;
+}
+.json_nav_list li{
+    width: 25%;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    float: left;
+    color: black;
+    font-size: 0.35rem;
+}
+.json_nav_active{
+    color: #3DB1FA !important;
+}
+.footer{
+    width: 100%;
+    height: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    border-top: 1px solid #3DB1FA;
+}
+.footer_nav{
+    width: 100%;
+    height: 1rem;
+}
+.footer_nav li{
+    width: 25%;
+    height: 1rem;
+    float: left;
+    text-align: center;
+    padding-top: 0.1rem;
+}
+.footer_nav li img{
+    width: 0.44rem;
+    height: 0.44rem;
+}
+.footer_nav li p{
+    font-size: 0.3rem;
+    padding-top: 0.1rem;
+    color: darkgray;
+}
+.displayli{
+    display: none;
+}

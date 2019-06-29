@@ -1,0 +1,174 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        window.onload = function () {
+            /*720代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是
+              为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
+            getRem(720, 100)
+        };
+        window.onresize = function () {
+            getRem(720, 100)
+        };
+        function getRem(pwidth, prem) {
+            var html = document.getElementsByTagName("html")[0];
+            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+            html.style.fontSize = oWidth / pwidth * prem + "px";
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_top">
+            <h1>
+                <img src="img/1.png">
+                <span>客服</span>
+            </h1>
+        </div>
+    </header>
+    <div class="main">
+        <div class="main_form">
+            <form class="form_all">
+                <h1>短信快捷登录</h1>
+                <div class="form1">
+                    <span><img src="img/2.png"></span>
+                    <input type="tel" class="tel" placeholder="手机号码">
+                    <p class="p1">请输入手机号码</p>
+                </div>
+                <div class="form_text">
+                    <div class="form2">
+                        <span><img src="img/3.png"></span>
+                        <input type="text" class="psw" placeholder="验证码">
+                        <p class="p2">请输入验证码</p>
+                    </div>
+                    <div class="time">
+                        <input type="button" class="btn" value="获取验证码" onclick="settime(this)">
+                    </div>
+                </div>
+                <div class="login">
+                    <input type="button" class="login_btn" value="立即登录&nbsp;/&nbsp;注册">
+                </div>
+                <div class="check">
+                    <input type="checkbox" class="box">
+                    <span>同意扣扣网注册协议</span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <h1>其它登录方式</h1>
+        <div class="list">
+            <ul class="footer_list">
+                <li>
+                    <img src="img/icon-sc1.png">
+                    <p>微信</p>
+                </li>
+                <li>
+                    <img src="img/icon-sc2.png">
+                    <p>淘宝</p>
+                </li>
+                <li>
+                    <img src="img/icon-sc3.png">
+                    <p>腾讯</p>
+                </li>
+                <li>
+                    <img src="img/icon-sc4.png">
+                    <p>微博</p>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script>
+        //倒计时
+        var countdown = 60;
+        function settime(val) {
+            if (countdown == 0) {
+                $(".btn").attr("disabled", false)//jq
+                // val.removeAttribute("disabled");//js
+                val.value = "获取验证码";
+                countdown = 60;
+            } else {
+                // val.setAttribute("disabled", true);//js
+                $(".btn").attr("disabled", true)//jq
+                val.value = "重新发送(" + countdown + ")";
+                countdown--;
+                setTimeout(function () {
+                    settime(val)
+                }, 1000)
+            };
+            //jquery写法
+            if (countdown < 10) {
+                $(".btn").css("color", "gold");
+            }
+            else {
+                $(".btn").css("color", "white");
+            }
+        };
+        //手机号
+        $(".tel").blur(function () {
+            var tel = $(".tel").val();
+            if (tel == "" || tel == null) {
+                $(this).next().html('请输入手机号');
+                $(this).next().show();
+                return;
+            } else if (!(/^((\d{3}-\d{8}|\d{4}-\d{7,8})|(1[3|5|7|8][0-9]{9}))$/.test(tel))) {
+                $(this).next().html('请输入11位正确的手机号');
+                $(this).next().show();
+                return;
+            }
+            $(this).next().hide();
+        });
+        //验证码
+        $(".psw").blur(function () {
+            var psw = $(".psw").val();
+            if (psw == "" || psw == null) {
+                $(this).next().html('请输入验证码');
+                $(this).next().show();
+                return;
+            } else if (!(/^\d{6}$/).test(psw)) {
+                $(this).next().html('请输入六位数字验证码');
+                $(this).next().show();
+                return;
+            }
+            $(this).next().hide();
+        });
+        //登录按钮
+        $(".login_btn").click(function () {
+            var tel = $(".tel").val();
+            var psw = $(".psw").val();
+            if ((tel == "" || tel == null) && (psw == "" || psw == null)) {
+                $(".p1").show();
+                $(".p2").show();
+            } else if (tel == "" || tel == null) {
+                $(".p1").show();
+            } else if (psw == "" || psw == null) {
+                $(".p2").show();
+            };
+            //复选框是否选中
+            if($(".box").prop("checked")){
+                $(this).prop("checked",true);
+                // console.log("选中了");
+            }else{
+                $(this).prop("checked",false);
+                alert("请同意注册协议");
+            };
+        }
+        );
+
+
+    </script>
+
+
+</body>
+
+</html>

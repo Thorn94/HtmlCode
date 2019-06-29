@@ -1,0 +1,24 @@
+body{
+    background-color: #e7e7e7;
+}
+
+.header{
+    background-color: #333;
+}
+a:hover{
+    color: red !important;
+}
+.dropdown{
+    padding-left: 30px;
+}
+.navbar{
+    margin-bottom: 0px !important;
+    
+}
+.header_bottom{
+    height: 100px;
+}
+.main{
+    padding-top: 40px;
+    background-color: white;
+}

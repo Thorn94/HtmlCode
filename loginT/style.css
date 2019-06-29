@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+header {
+    width: 100%;
+    height: 3.5rem;
+    background-image: url(img/head.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header_top {
+    width: 90%;
+    margin: 0 5%;
+    padding: 0.2rem 0;
+    height: 0.5rem;
+}
+
+.header_top h1 {
+    width: 100%;
+}
+
+.header_top h1 img {
+    width: 0.5rem;
+    height: 0.5rem;
+    float: left;
+}
+
+.header_top h1 span {
+    float: right;
+    color: white;
+    font-size: 0.25rem;
+    line-height: 0.4rem;
+}
+
+.main {
+    width: 90%;
+    margin: 0 5%;
+    background-color: white;
+    border-radius: 0.1rem;
+    position: absolute;
+    top: 1rem;
+}
+
+.main_form {
+    width: 100%;
+}
+
+.form_all {
+    width: 88%;
+    margin: 0.6rem 6%;
+}
+
+.form_all h1 {
+    color: red;
+    font-size: 0.3rem;
+    margin-bottom: 0.2rem;
+}
+
+.form1 {
+    width: 100%;
+    height: 0.8rem;
+    display: inline-flex;
+    position: relative;
+    margin-bottom: 0.3rem;
+}
+
+.form2 {
+    width: 70%;
+    height: 0.8rem;
+    display: inline-flex;
+    position: relative;
+    margin-bottom: 0.3rem;
+}
+
+.form2 span {
+    width: 20%;
+    height: 0.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.time {
+    width: 30%;
+    margin-left: 0.2rem;
+}
+
+.form1 span {
+    width: 10%;
+    height: 0.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.form1 span img, .form2 span img {
+    width: 100%;
+    height: 0.8rem;
+}
+
+.tel {
+    width: 90%;
+    height: 0.8rem;
+    background-color: #f1f0f0;
+    font-size: 0.3rem;
+    color: black;
+    margin-left: 10%;
+    padding-left: 0.1rem;
+    border: 0;
+    outline: none;
+}
+
+.psw {
+    width: 80%;
+    height: 0.8rem;
+    background-color: #f1f0f0;
+    font-size: 0.3rem;
+    color: black;
+    margin-left: 20%;
+    padding-left: 0.1rem;
+    border: 0;
+    outline: none;
+}
+
+.form_text {
+    width: 100%;
+    display: inline-flex;
+    margin-bottom: 0.3rem;
+}
+
+.btn {
+    width: 100%;
+    height: 0.8rem;
+    background-color: #fe5455;
+    background: linear-gradient(to right, #fe5455, #fc7491);
+    color: white;
+    font-size: 0.25rem;
+    text-align: center;
+    line-height: 0.8rem;
+}
+
+.login {
+    width: 100%;
+    margin-bottom: 0.3rem;
+}
+
+.login_btn {
+    width: 100%;
+    height: 0.8rem;
+    background: linear-gradient(to right, #fe5455, #fc7491);
+    background-color: #fe5455;
+    box-shadow: 0 5px 9px #fddae1;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 0.3rem;
+    text-align: center;
+    outline: none;
+    border: 0;
+}
+
+.check {
+    width: 50%;
+    margin: 0 25%;
+    display: inline-flex;
+}
+
+.box {
+    width: 0.3rem;
+    height: 0.3rem;
+}
+
+.check span {
+    color: #00000096;
+    font-size: 0.25rem;
+    padding-left: 0.1rem;
+}
+
+footer {
+    width: 100%;
+    margin-top: 4.5rem !important;
+}
+
+footer h1 {
+    color: #00000096;
+    font-size: 0.3rem;
+    text-align: center;
+    margin-bottom: 0.6rem;
+}
+
+.list {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.footer_list {
+    width: 100%;
+}
+
+.footer_list li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.footer_list li img {
+    width: 0.67rem;
+    height: 0.67rem;
+}
+
+.footer_list li p {
+    color: #00000096;
+    font-size: 0.25rem;
+    padding-top: 0.2rem;
+}
+
+.form1 p,.form2 p{
+    color: red;
+    position: absolute;
+    right: 0.1rem;
+    font-size: 0.25rem;
+    line-height: 0.8rem;
+    display: none;
+}

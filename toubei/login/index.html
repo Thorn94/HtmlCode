@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        window.onload = function () {
+            /*720代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是
+              为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
+            getRem(720, 100)
+        };
+        window.onresize = function () {
+            getRem(720, 100)
+        };
+        function getRem(pwidth, prem) {
+            var html = document.getElementsByTagName("html")[0];
+            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+            html.style.fontSize = oWidth / pwidth * prem + "px";
+        }
+    </script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>登录</title>
+</head>
+
+<body>
+    <div class="login">
+        <div class="login_bg">
+            <img src="../img/login_bg.png">
+        </div>
+        <div class="content">
+            <div class="header">
+                <div class="icon">
+                    <a href="../home/index.html"><img src="../img/微信图片_20190508161007.png"></a>
+                </div>
+                <div class="register">
+                    <a href="../register/index.html">注册</a>
+                </div>
+            </div>
+            <div class="form">
+                <div class="username">
+                    <input type="text" placeholder="用户名/手机号">
+                </div>
+                <div class="password">
+                    <input type="password" placeholder="密码" id="change">
+                    <img src="../img/bkj.png"  id="img">
+                </div>
+                <div class="btn">
+                    <button><span>登录</span></button>
+                </div>
+                <p>忘记密码？</p>
+                <div class="wechat">
+                    <img src="../img/loginwxa.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var toggle = true;
+        $("#img").click(function(){
+            if(toggle){
+                $("#img").attr("src","../img/kj.png");
+                $("#change").attr("type","text");
+                toggle = false;
+            }else{
+                $("#img").attr("src","../img/bkj.png");
+                $("#change").attr("type","password");
+                toggle = true;
+            }
+        });
+    </script>
+</body>
+
+</html>

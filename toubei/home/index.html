@@ -1,0 +1,120 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        window.onload = function () {
+            /*720代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是
+              为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
+            getRem(720, 100)
+        };
+        window.onresize = function () {
+            getRem(720, 100)
+        };
+        function getRem(pwidth, prem) {
+            var html = document.getElementsByTagName("html")[0];
+            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+            html.style.fontSize = oWidth / pwidth * prem + "px";
+        }
+    </script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>投呗-光彩玖玖旗下专业P2P个人理财平台-理财就投呗</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_top">
+            <div class="img1">
+                <img src="../img/newsa.png">
+            </div>
+            <p>投呗生活</p>
+            <div class="img2">
+                <img src="../img/customer_service.png" /></div>
+        </div>
+        <div class="header_bottom">
+            <div class="date">
+                <img src="../img/ptsja.png" />
+                <p>平台数据</p>
+            </div>
+            <div class="date">
+                <img src="../img/ewma.png" />
+                <p>专属二维码</p>
+            </div>
+            <div class="date">
+                <img src="../img/rmtza.png" />
+                <p>新手攻略</p>
+            </div>
+            <div class="date">
+                <img src="../img/jfsca.png" />
+                <p>积分商城</p>
+            </div>
+        </div>
+        <div class="line">
+        </div>
+    </div>
+    <div class="main">
+        <div class="main_top">
+            <div class="border_top">
+            </div>
+            <h3>安心理财 稳健收益</h3>
+            <div class="border_top">
+            </div>
+        </div>
+        <div class="main_text">
+            <span>锁定期</span>
+            <span>|</span>
+            <span>剩余金额</span>
+            <span>|</span>
+            <span>起投金额</span>
+        </div>
+        <div class="main_btn">
+            <button><span>立即投资</span></button>
+        </div>
+    </div>
+    <div class="safe">
+        <div class="safe_text">
+            <img src="../img/slogana.png">
+            <span>账户安全由人保财险和广东华兴银行共同保障</span>
+        </div>
+        <div class="safe_line">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_nav">
+            <div class="nav_line">
+
+            </div>
+            <ul id="nav_content">
+                <li class="nav1">
+                    <img src="../img/home_pressed.png">
+                    <p class="selected">首页</p>
+                </li>
+                <li class="nav1">
+                    <img src="../img/invest.png">
+                    <p>理财</p>
+                </li>
+                <li class="nav1">
+                    <img src="../img/activity.png">
+                    <p>商城</p>
+                </li>
+                <li class="nav1">
+                    <img src="../img/my.png">
+                    <p>我的</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $("ul#nav_content li").click(function () {
+                $(this).addClass("selected").siblings().removeClass("selected");
+            });
+        });
+    </script>
+</body>
+
+</html>

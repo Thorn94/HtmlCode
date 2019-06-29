@@ -1,0 +1,245 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        window.onload = function () {
+            /*720代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是
+              为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
+            getRem(720, 100)
+        };
+        window.onresize = function () {
+            getRem(720, 100)
+        };
+        function getRem(pwidth, prem) {
+            var html = document.getElementsByTagName("html")[0];
+            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+            html.style.fontSize = oWidth / pwidth * prem + "px";
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <ul class="header_list">
+            <li class="item4" id="btn">附近</li>
+            <li class="item4" id="btn1">美食</li>
+            <li class="item4" id="btn2">智能排序</li>
+            <li class="item4" id="btn3">全部活动</li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="push1 t1 display">
+            <ul class="push_left">
+                <li class="item active">附近</li>
+                <li class="item">第1个选项</li>
+                <li class="item">第2个选项</li>
+                <li class="item">第3个选项</li>
+            </ul>
+            <div class="content">
+                <ul class="push_right">
+                    <li class="item5 select">附近</li>
+                    <li class="item5">1</li>
+                    <li class="item5">2</li>
+                    <li class="item5">3</li>
+                    <li class="item5">4</li>
+                    <li class="item5">5</li>
+                    <li class="item5">6</li>
+                    <li class="item5">7</li>
+                    <li class="item5">8</li>
+                </ul>
+                <ul class="push_right display">
+                    <li class="item5 select">第1个选项-1</li>
+                    <li class="item5">第1个选项-2</li>
+                </ul>
+                <ul class="push_right display">
+                    <li class="item5 select">第2个选项-2</li>
+                </ul>
+                <ul class="push_right display">
+                    <li class="item5 select">第3个选项-3</li>
+                </ul>
+            </div>
+        </div>
+        <div class="push2 display t1">
+            <ul class="push_left">
+                <li class="item1 active">美食</li>
+                <li class="item1">1</li>
+                <li class="item1">2</li>
+                <li class="item1">3</li>
+            </ul>
+            <div class="content1">
+                <ul class="push_right">
+                    <li class="item5 select">美食</li>
+                </ul>
+                <ul class="push_right display">
+                    <li class="item5">a1</li>
+                </ul>
+                <ul class="push_right display">
+                    <li class="item5">a2</li>
+                </ul>
+                <ul class="push_right display">
+                    <li class="item5">a3</li>
+                </ul>
+            </div>
+        </div>
+        <div class="push3 display t1">
+            <ul class="push_left">
+                <li class="item2 active">智能排序</li>
+                <li class="item2">排序</li>
+            </ul>
+            <div class="content2">
+                <ul class="push_right">
+                    <li class="item5 select">智能排序</li>
+                </ul>
+                <ul class="push_right display">
+                    <li class="item5">排序</li>
+                </ul>
+            </div>
+        </div>
+        <div class="push4 display t1">
+            <ul>
+                <li class="selected item3">全部活动</li>
+                <li class="item3">1</li>
+                <li class="item3">2</li>
+                <li class="item3">3</li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- <div class="blank">
+     </div> -->
+    <script>
+        $(".item").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            //找到当前触发标签的索引位置值，如0，1，2
+            var v = $(this).index();
+            //根据标签索引位置值在内容菜单里查找位置也是等于v的标签，然后删除hide，再把兄弟标签添加hide
+            $('.content').children().eq(v).removeClass('display').siblings().addClass('display')
+        });
+        $(".item1").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            //找到当前触发标签的索引位置值，如0，1，2
+            var v = $(this).index();
+            //根据标签索引位置值在内容菜单里查找位置也是等于v的标签，然后删除hide，再把兄弟标签添加hide
+            $('.content1').children().eq(v).removeClass('display').siblings().addClass('display')
+        });
+        $(".item2").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            var v = $(this).index();
+            $('.content2').children().eq(v).removeClass('display').siblings().addClass('display')
+        });
+        $(".item3").click(function () {
+            $(this).addClass("selected").siblings().removeClass("selected");
+        });
+        $(".item5").click(function () {
+            $(this).addClass("select").siblings().removeClass("select");
+        });
+        $(".item4").click(function () {
+            //找到当前触发标签的索引位置值，如0，1，2
+            var v = $(this).index();
+            //根据标签索引位置值在内容菜单里查找位置也是等于v的标签，然后删除hide，再把兄弟标签添加hide
+            $('.main').children().eq(v).removeClass('display').siblings().addClass('display')
+        });
+        // $(document).click(function (e) {
+        //     var _con = $('.main'); // 设置目标区域
+        //     if (!_con.is(e.target) && _con.has(e.target).length === 0) {
+        //         $('.main').remove();
+        //         $(".blank").hide()
+        //     }
+        // });
+
+        $(function () {
+            $('.item4').click(function () {
+                console.log($(this));
+                if ($(this).hasClass('tt')) {
+                    $(".item4").removeClass('tt');
+                    $('.t1').hide();
+                } else {
+                    $(".item4").removeClass('tt');
+                    $('.t1').hide();
+                    $(this).addClass('tt');
+                    $('.t1').eq($(".item4").index($(this)[0])).show();
+                }
+            });
+
+        });
+
+
+
+        // $('#btn').click(function () {
+        //     if ($(this).hasClass('tt')) {
+        //         $(".push1").show();
+        //         $(".push2").hide();
+        //         $(".push3").hide();
+        //         $(".push4").hide();
+        //     }
+        //     else {
+        //         $(".push1").hide();
+        //         $(".push2").hide();
+        //         $(".push3").hide();
+        //         $(".push4").hide();
+        //     }
+        // })
+        // $(this).toggleClass('tt');
+
+        // $('#btn1').click(function () {
+        //     if ($(this).hasClass('t1')) {
+        //         $(".push2").show();
+        //         $(".push1").hide();
+        //         $(".push3").hide();
+        //         $(".push4").hide();
+        //     }
+        //     else {
+        //         $(".push1").hide();
+        //         $(".push2").hide();
+        //         $(".push3").hide();
+        //         $(".push4").hide();
+        //     }
+        // })
+        // $(this).toggleClass('t1');
+
+        // $('#btn2').click(function () {
+        //     if ($(this).hasClass('t2')) {
+        //         $(".push3").show();
+        //         $(".push1").hide();
+        //         $(".push2").hide();
+        //         $(".push4").hide();
+        //     }
+        //     else {
+        //         $(".push1").hide();
+        //         $(".push2").hide();
+        //         $(".push3").hide();
+        //         $(".push4").hide();
+        //     }
+        // })
+        // $(this).toggleClass('t2');
+
+        // $('#btn3').click(function () {
+        //     if ($(this).hasClass('t3')) {
+        //         $(".push4").show();
+        //         $(".push1").hide();
+        //         $(".push2").hide();
+        //         $(".push3").hide();
+        //     }
+        //     else {
+        //         $(".push1").hide();
+        //         $(".push2").hide();
+        //         $(".push3").hide();
+        //         $(".push4").hide();
+        //     }
+        // })
+        // $(this).toggleClass('t3');
+    </script>
+</body>
+
+</html>

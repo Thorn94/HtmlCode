@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    height: 3rem;
+    background: -webkit-linear-gradient(right,  rgb(195, 0, 255), rgb(44, 44, 201));
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgb(195, 0, 255), rgb(44, 44, 201));
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right,  rgb(195, 0, 255), rgb(44, 44, 201));
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(right, rgb(195, 0, 255), rgb(44, 44, 201));
+    /* 标准的语法（必须放在最后） */
+}
+
+.header_top {
+    padding: 0.1rem 0.1rem;
+    width: 97%;
+    display: inline-flex;
+    /* position:fixed; */
+    
+}
+
+.logo {
+    width: 3.65rem;
+}
+
+.logo img {
+    width: 1.51rem;
+    height: 0.35rem;
+    padding-left: 0.9125rem;
+}
+
+.header_top p {
+    width: 1.825rem;
+    font-size: 0.16rem;
+    color: white;
+}
+
+.line {
+    border-top: 1px solid rgba(169, 169, 169, 0.315);
+}
+
+.header_bottom {
+    display: inline-flex;
+    margin: 0.3rem 0.4rem;
+    width: 6.4rem;
+}
+
+.img1 {
+    width: 2.211rem;
+}
+
+.img2 {
+    width: 2.211rem;
+}
+
+.img3 {
+    width: 2.211rem;
+}
+
+.img1 img {
+    width: 0.39rem;
+    height: 0.4rem;
+    padding-left: 0.9335rem;
+}
+
+.img2 img {
+    width: 0.39rem;
+    height: 0.4rem;
+    padding-left: 0.9335rem;
+}
+
+.img3 img {
+    width: 0.39rem;
+    height: 0.4rem;
+    padding-left: 0.9335rem;
+}
+
+.img1 p {
+    font-size: 0.14rem;
+    color: white;
+    text-align: center;
+    padding-top: 0.1rem;
+}
+
+.img2 p {
+    font-size: 0.14rem;
+    color: white;
+    text-align: center;
+    padding-top: 0.1rem;
+}
+
+.img3 p {
+    font-size: 0.14rem;
+    color: white;
+    text-align: center;
+    padding-top: 0.1rem;
+}
+
+.blank {
+    position: absolute;
+    top: 2.1rem;
+    margin: 0.3rem 0.3rem;
+    width: 6.6rem;
+    height: 1.5rem;
+    background-color: white;
+}
+
+.blank_txt {
+    padding: 0.1rem 0.2rem;
+    height: 1.26rem;
+    box-shadow: 0 15px 60px rgba(92, 84, 84, 0.363);
+}
+
+.blank_txt p {
+    font-size: 0.12rem;
+    color: darkgray;
+}
+
+.blank_txt h6 {
+    font-size: 0.3rem;
+    color: blue;
+    font-weight: bold;
+    padding-top: 0.3rem;
+}
+
+.blank_txt span {
+    font-size: 0.16rem;
+    color: white;
+    float: right;
+    border: 4px solid   rgb(44, 44, 201);
+    border-radius: 0.5rem;
+    background: -webkit-linear-gradient(right,  rgb(195, 0, 255), rgb(44, 44, 201));
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgb(195, 0, 255), rgb(44, 44, 201));
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right,  rgb(195, 0, 255), rgb(44, 44, 201));
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(right, rgb(195, 0, 255), rgb(44, 44, 201));
+    /* 标准的语法（必须放在最后） */
+}
+.banner{
+    margin-top: 1.7rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    position: absolute;
+    top: 3rem;
+    width: 94.5%;
+}
+.banner h6{
+    font-size: 0.2rem;
+    font-weight: bold;
+}
+.banner_box{
+    display: inline-flex;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+.banner_box p{
+    font-size: 0.18rem;
+    color: white;
+    text-align: center;
+    line-height: 0.35rem;
+}
+.banner_box span{
+    font-size: 0.16rem;
+    color: white;
+    text-align: center;
+}
+.banner_box1{
+    width: 2.2rem;
+    height: 0.7rem;
+    border-radius: 0.1rem;
+    margin-right: 0.1rem;
+    box-shadow: 5px 0px 20px rgba(32, 167, 221, 0.945);
+    background: -webkit-linear-gradient(right,  rgba(44, 125, 201, 0.945), rgba(32, 167, 221, 0.945));
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgba(44, 125, 201, 0.945), rgba(32, 167, 221, 0.945));
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right,  rgba(44, 125, 201, 0.945), rgba(32, 167, 221, 0.945));
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(right, rgba(44, 125, 201, 0.945), rgba(32, 167, 221, 0.945));
+    /* 标准的语法（必须放在最后） */
+}
+.banner_box2{
+    width: 2.2rem;
+    height: 0.7rem;
+    border-radius: 0.1rem;
+    margin-right: 0.1rem;
+    box-shadow: 5px 0px 20px rgb(195, 0, 255);
+    background: -webkit-linear-gradient(right,  rgb(195, 0, 255), rgba(195, 0, 255, 0.445));
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgb(195, 0, 255), rgba(195, 0, 255, 0.445));
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right,  rgb(195, 0, 255),rgba(195, 0, 255, 0.445));
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(right, rgb(195, 0, 255),rgba(195, 0, 255, 0.445));
+    /* 标准的语法（必须放在最后） */
+}
+.banner_box3{
+    width: 2.2rem;
+    height: 0.7rem;
+    border-radius: 0.1rem;
+    margin-right: 0.1rem;
+    box-shadow: 5px 0px 20px rgb(255, 153, 0);
+    background: -webkit-linear-gradient(right,  rgb(255, 60, 0),rgb(255, 153, 0));
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgb(195, 0, 255), rgb(255, 153, 0));
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right,  rgb(195, 0, 255), rgb(255, 153, 0));
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(right, rgb(195, 0, 255), rgb(255, 153, 0));
+    /* 标准的语法（必须放在最后） */
+}
+.banner_img{
+   
+    margin: 0.8rem 0.2rem;
+   
+}
+.banner_img img{
+    width: 98%;
+   margin-top: 0.1rem;
+   margin-bottom: 0.1rem;
+}
+.footer{
+    position: absolute;
+    top: 11rem;
+    width: 100%;
+    height: 0.72rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    background-color: white;
+    border-top: 1px solid rgba(169, 169, 169, 0.315);
+}
+.footer_img{
+    width: 100%;
+    height: 0.6179rem;
+    display: inline-flex;
+    padding-top: 0.1rem;
+}
+.footer_img1 {
+    width: 1.875rem;
+    
+}
+.footer_img1:hover{
+    color: blue;
+    cursor: pointer;
+}
+.footer_img1 img{
+    padding-left: 0.77rem;
+    width: 0.31rem;
+    height: 0.3rem;
+}
+.footer_img1 p{
+    padding-top: 0.1rem;
+    font-size: 0.14rem;
+    text-align: center;
+}

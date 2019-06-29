@@ -1,0 +1,193 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        window.onload = function () {
+            /*720代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是
+              为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
+            getRem(720, 100)
+        };
+        window.onresize = function () {
+            getRem(720, 100)
+        };
+        function getRem(pwidth, prem) {
+            var html = document.getElementsByTagName("html")[0];
+            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+            html.style.fontSize = oWidth / pwidth * prem + "px";
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_left">
+            <img src="img/icon1.png" alt="back">
+        </div>
+        <div class="header_right">
+            <img src="img/icon.png" alt="icon" id="problem">
+        </div>
+    </div>
+    <div class="main">
+        <h1>账号登录</h1>
+        <div class="form">
+            <div class="form1">
+                <input type="text" id="tel" placeholder="请输入手机号码">
+                <label class="lable1">
+                    手机号不能为空
+                </label>
+            </div>
+            <div class="form2">
+                <input type="password" id="psw" placeholder="请输入密码">
+                <label class="lable2">
+                    密码不能为空
+                </label>
+            </div>
+        </div>
+        <div class="btn">
+            <button>登录</button>
+        </div>
+        <div class="register">
+            <p>注册账号&nbsp;&nbsp;&nbsp;&nbsp;忘记密码</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_txt">
+            <span></span>
+            <h2>其它登录方式</h2>
+            <span></span>
+        </div>
+        <div class="list">
+            <ul class="u_list">
+                <li>
+                    <img src="img/wx.png" alt="wechat">
+                    <p>微信</p>
+                </li>
+                <li>
+                    <img src="img/wb.png" alt="webo">
+                    <p>微博</p>
+                </li>
+                <li>
+                    <img src="img/qq.png" alt="qq">
+                    <p>QQ</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="blank">
+        <p>问题详情</p>
+        <img src="img/xx_da.png" alt="xx" id="close">
+    </div>
+
+
+
+    <script>
+        //透明层隐藏显示
+        $("#problem").click(function () {
+            $(".blank").show();
+        });
+        $("#close").click(function () {
+            $(".blank").hide();
+        });
+    </script>
+
+
+
+
+    <script>
+        
+        $(".form2").click(function () {
+            var t = $("#tel").val();//手机号
+            var t1 = $("#psw").val();//密码
+
+            if (t == "") {
+                $(".lable1").show();//手机号
+                $(".lable1").text("手机号不能为空");//还原
+                return;
+            } else {
+                if (!(/^((\d{3}-\d{8}|\d{4}-\d{7,8})|(1[3|5|7|8][0-9]{9}))$/.test(t))) {
+                    $(".lable1").show();
+                    $(".lable1").text("手机号格式不正确");//覆盖
+                    return;
+                }
+                $(".lable1").hide();
+                return false;
+            };
+
+
+        });
+
+        //登录按钮触发事件
+        $(".btn").click(function () {
+            var t = $("#tel").val();
+            var t1 = $("#psw").val();
+            var isCheck=true;
+            if (t == "") {
+                $(".lable1").show();
+                $(".lable1").text("手机号不能为空");
+                isCheck=false;
+            }else {
+                if (!(/^((\d{3}-\d{8}|\d{4}-\d{7,8})|(1[3|5|7|8][0-9]{9}))$/.test(t))) {//手机号正则
+                    $(".lable1").show();
+                    $(".lable1").text("手机号格式不正确");
+                    isCheck=false;
+
+                }
+            };
+            if (t1 == "") {
+                $(".lable2").show();//密码
+                isCheck=false;
+
+            }
+
+            if(isCheck!=true){
+                 return;
+            }
+            $(".lable1").hide();//手机号
+            $(".lable2").hide();//密码
+        })
+    </script>
+    <!-- <script>
+    $(document).ready(function(){
+            $("#tel").blur(function(){
+                var phone = $("#tel").val();
+                var phone_err = /^1[34578]\d{9}$/;
+                if(phone == ""){
+                    $(".lable1").html('手机号不能为空') ;
+                    $(".lable1").show();
+                    return;
+                }else if(!phone_err.test(phone)){
+                    $(".lable1").html('手机号输入错误') ;
+                    $(".lable1").show();
+                    return;
+                }
+                $(".lable1").hide();
+            })
+            $("#psw").blur(function(){
+                var phone = $("#psw").val();
+                if(phone == ""){
+                    $(".lable2").show();
+                    return;
+                }
+                $(".lable2").hide();
+            })
+            // $(".icon").click(function(){
+            //     $(".acc_black").show();
+            // })
+            // $(".black_X").click(function(){
+            //     $(".acc_black").hide();
+            // })
+        })
+
+    
+    </script> -->
+
+</body>
+
+</html>

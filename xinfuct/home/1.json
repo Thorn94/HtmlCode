@@ -1,0 +1,307 @@
+[{
+	"guid": "3b274BeD-F9c0-fbBc-dfe9-A9cfFA7Cfbec",
+	"id": 1,
+	"YearRate": 8,
+	"timeLimit": 11,
+	"numbers": 29.40
+}, {
+	"guid": "Bce30A24-6342-bE85-9B39-5f7Ca8c63f22",
+	"id": 2,
+	"YearRate": 10,
+	"timeLimit": 5,
+	"numbers": 58.5
+}, {
+	"guid": "4EDf4FBa-1dfD-f467-8557-1da46d8d157D",
+	"id": 3,
+	"YearRate": 3,
+	"timeLimit": 7,
+	"numbers": 42.54
+}, {
+	"guid": "C9c7f4De-b351-f4c4-2512-C3Af9A9c62ae",
+	"id": 4,
+	"YearRate": 6,
+	"timeLimit": 5,
+	"numbers": 15.32
+}, {
+	"guid": "8F5E770E-1CE4-f4af-D5c6-8c30dCDAC19d",
+	"id": 5,
+	"YearRate": 8,
+	"timeLimit": 2,
+	"numbers": 62.54
+}, {
+	"guid": "5fC18C79-3AD6-219A-eE99-af6EfA7b0544",
+	"id": 6,
+	"YearRate": 1,
+	"timeLimit": 6,
+	"numbers": 43.46
+}, {
+	"guid": "D4bac7cA-A90F-DeBC-DA8e-6c27Bc5b824e",
+	"id": 7,
+	"YearRate": 11,
+	"timeLimit": 9,
+	"numbers": 11.56
+}, {
+	"guid": "CfbabAf9-8B1D-ca9c-9b96-E22eCc3B89e7",
+	"id": 8,
+	"YearRate": 6,
+	"timeLimit": 6,
+	"numbers": 13.64
+}, {
+	"guid": "628cA29f-839e-f8Aa-8ABA-F3E9EeD14bbf",
+	"id": 9,
+	"YearRate": 12,
+	"timeLimit": 2,
+	"numbers": 98.03
+}, {
+	"guid": "BC6DD6fC-ffBb-fd38-A886-eB655dB3fF67",
+	"id": 10,
+	"YearRate": 6,
+	"timeLimit": 10,
+	"numbers": 47.72
+}, {
+	"guid": "69cb3bA2-847c-b31f-3836-7c376b3db39b",
+	"id": 11,
+	"YearRate": 8,
+	"timeLimit": 2,
+	"numbers": 84.11
+}, {
+	"guid": "81f3F6Fc-D045-98c9-bB97-f3E8fC8E6ceC",
+	"id": 12,
+	"YearRate": 2,
+	"timeLimit": 2,
+	"numbers": 48.27
+}, {
+	"guid": "1343aB46-dAFD-3DC8-A5bB-b95162344440",
+	"id": 13,
+	"YearRate": 5,
+	"timeLimit": 10,
+	"numbers": 51.88
+}, {
+	"guid": "d9F93743-Ee8A-1F9E-fFf2-0B9cB160022e",
+	"id": 14,
+	"YearRate": 12,
+	"timeLimit": 5,
+	"numbers": 76.18
+}, {
+	"guid": "7b1c69AD-5EBD-833B-AED1-E3CBEADc3c8e",
+	"id": 15,
+	"YearRate": 4,
+	"timeLimit": 2,
+	"numbers": 58.07
+}, {
+	"guid": "7d80BdfB-5AdD-663D-7dF1-AFEC81e6AeaF",
+	"id": 16,
+	"YearRate": 9,
+	"timeLimit": 7,
+	"numbers": 33.36
+}, {
+	"guid": "b81cF7Eb-9f09-2CBC-8F8B-84fd7CaA442F",
+	"id": 17,
+	"YearRate": 2,
+	"timeLimit": 10,
+	"numbers": 6.38
+}, {
+	"guid": "1AB5c8FA-7137-05Fc-deed-AbEe1ceC09bE",
+	"id": 18,
+	"YearRate": 2,
+	"timeLimit": 7,
+	"numbers": 36.89
+}, {
+	"guid": "1Bb8CF55-F0b6-4e4d-c7D1-F46Bc4E49931",
+	"id": 19,
+	"YearRate": 2,
+	"timeLimit": 6,
+	"numbers": 53.21
+}, {
+	"guid": "bA78541C-8f8D-7BEc-CbfE-1CBbBA46EDe9",
+	"id": 20,
+	"YearRate": 4,
+	"timeLimit": 1,
+	"numbers": 47.42
+}, {
+	"guid": "56496fED-Aa2B-d478-cDbd-fe5Bcccde4c8",
+	"id": 21,
+	"YearRate": 7,
+	"timeLimit": 8,
+	"numbers": 52.77
+}, {
+	"guid": "886A78A5-A2b7-fFb6-D90b-Ab4Df4AAcE10",
+	"id": 22,
+	"YearRate": 9,
+	"timeLimit": 7,
+	"numbers": 58.41
+}, {
+	"guid": "c9bC803B-C6aA-Ac9D-1ED9-FEbdb44BCAdD",
+	"id": 23,
+	"YearRate": 8,
+	"timeLimit": 4,
+	"numbers": 12.93
+}, {
+	"guid": "39482F8E-AF26-5756-01D8-8AbBAAdcdbBF",
+	"id": 24,
+	"YearRate": 11,
+	"timeLimit": 6,
+	"numbers": 78.72
+}, {
+	"guid": "58FC2302-65Fb-FFC6-9Be1-386CbFe7BDAe",
+	"id": 25,
+	"YearRate": 10,
+	"timeLimit": 7,
+	"numbers": 28.2
+}, {
+	"guid": "Cbc11bA9-Be1f-3eDF-Ee32-e62bdEbB1A3D",
+	"id": 26,
+	"YearRate": 11,
+	"timeLimit": 11,
+	"numbers": 75.12
+}, {
+	"guid": "E7ecD9d2-1b78-66dc-6249-D2C86c8C7ebD",
+	"id": 27,
+	"YearRate": 7,
+	"timeLimit": 7,
+	"numbers": 19.37
+}, {
+	"guid": "98dBbBFc-eA2A-a3C6-879E-B8acE6bA5d93",
+	"id": 28,
+	"YearRate": 8,
+	"timeLimit": 7,
+	"numbers": 13.62
+}, {
+	"guid": "cEEc9bAC-BBdA-1cd2-b79d-5897f844CE84",
+	"id": 29,
+	"YearRate": 11,
+	"timeLimit": 2,
+	"numbers": 11.38
+}, {
+	"guid": "1C216434-0075-C678-aD2F-1Ff3FA556e9b",
+	"id": 30,
+	"YearRate": 5,
+	"timeLimit": 9,
+	"numbers": 34.23
+}, {
+	"guid": "f22fA576-4f03-ed01-42A3-1a731CBCdaD6",
+	"id": 31,
+	"YearRate": 6,
+	"timeLimit": 5,
+	"numbers": 53.72
+}, {
+	"guid": "862Fb0c3-C2Ab-F945-345F-e1cF6E233DfE",
+	"id": 32,
+	"YearRate": 11,
+	"timeLimit": 10,
+	"numbers": 56.17
+}, {
+	"guid": "e62A2BdE-B87d-5a4e-0aEd-8c652eC468cf",
+	"id": 33,
+	"YearRate": 3,
+	"timeLimit": 5,
+	"numbers": 8.14
+}, {
+	"guid": "77C5602a-C369-C8F1-E623-4dbEA7AABE3a",
+	"id": 34,
+	"YearRate": 9,
+	"timeLimit": 5,
+	"numbers": 22.21
+}, {
+	"guid": "1d2CAbE8-4C5d-196A-8d16-42aCe65bF7fD",
+	"id": 35,
+	"YearRate": 10,
+	"timeLimit": 9,
+	"numbers": 34.51
+}, {
+	"guid": "7CecaBd3-dfed-b17D-DFDB-bFF7d6EfeF40",
+	"id": 36,
+	"YearRate": 5,
+	"timeLimit": 2,
+	"numbers": 43.64
+}, {
+	"guid": "e09E9C1f-D623-C9fb-8Aad-e7cEfE6af81d",
+	"id": 37,
+	"YearRate": 9,
+	"timeLimit": 7,
+	"numbers": 46.36
+}, {
+	"guid": "B3CC9ED5-BF5f-12c2-813d-71dEbdfBfA1a",
+	"id": 38,
+	"YearRate": 8,
+	"timeLimit": 3,
+	"numbers": 61.17
+}, {
+	"guid": "5C429c35-dA0f-5fC1-fb97-15D7b61CD75c",
+	"id": 39,
+	"YearRate": 6,
+	"timeLimit": 3,
+	"numbers": 49.21
+}, {
+	"guid": "7Fec31Ee-967C-8dC4-B775-Cf09cFA2C8e6",
+	"id": 40,
+	"YearRate": 7,
+	"timeLimit": 6,
+	"numbers": 35.03
+}, {
+	"guid": "d40BB1A6-bfEd-DEB0-5d1f-F435AD5e5b86",
+	"id": 41,
+	"YearRate": 8,
+	"timeLimit": 4,
+	"numbers": 1.77
+}, {
+	"guid": "Ed5a6fDc-67CC-EabB-9120-eb8cCda9d24d",
+	"id": 42,
+	"YearRate": 11,
+	"timeLimit": 6,
+	"numbers": 54.64
+}, {
+	"guid": "E5deF4Fb-6bA2-f4b4-DD49-aEB1CDdDE547",
+	"id": 43,
+	"YearRate": 6,
+	"timeLimit": 8,
+	"numbers": 58.99
+}, {
+	"guid": "ecAefaE5-CA8e-28Ed-Cd25-1FE6b22EFebf",
+	"id": 44,
+	"YearRate": 10,
+	"timeLimit": 8,
+	"numbers": 83.4
+}, {
+	"guid": "29deA450-D978-93DE-Ae7E-F1621e855561",
+	"id": 45,
+	"YearRate": 10,
+	"timeLimit": 1,
+	"numbers": 27.94
+}, {
+	"guid": "238b44B5-aCBc-d0fb-4067-76Fca8FB4BbF",
+	"id": 46,
+	"YearRate": 10,
+	"timeLimit": 9,
+	"numbers": 22.57
+}, {
+	"guid": "9e279BC0-5A45-e0f5-e144-2CDcf9FC6BA2",
+	"id": 47,
+	"YearRate": 3,
+	"timeLimit": 4,
+	"numbers": 8.79
+}, {
+	"guid": "9D075825-Fe3B-8969-d62E-Ea2389Febe75",
+	"id": 48,
+	"YearRate": 1,
+	"timeLimit": 12,
+	"numbers": 61.68
+}, {
+	"guid": "DFdc0BB8-eced-bCeD-0dc1-FA9E7F09464D",
+	"id": 49,
+	"YearRate": 3,
+	"timeLimit": 9,
+	"numbers": 3.05
+}, {
+	"guid": "DAC3A8aC-cCA3-4Fbf-8EaB-Ad7B95F0FeA5",
+	"id": 50,
+	"YearRate": 1,
+	"timeLimit": 11,
+	"numbers": 14.28
+}, {
+	"guid": "90DCCABf-B9E1-88DD-CD55-CFE8e65EB497",
+	"id": 51,
+	"YearRate": 4,
+	"timeLimit": 4,
+	"numbers": 81.07
+}]

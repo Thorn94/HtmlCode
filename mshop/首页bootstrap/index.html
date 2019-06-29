@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="normalize.css" type="text/css">
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="swiper-4.5.0/dist/css/swiper.min.css">
+  <script src="swiper-4.5.0/dist/js/swiper.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
+  <style type="text/css"></style>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="header-top-left col-md-6 ">
+          <ul class="header-login-reg float-left">
+            <li>
+              <a href="#">LOG IN</a>
+            </li>
+            <li>
+              <a href="#">REGISTER</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-top-right col-md-6 ">
+          <ul class="language-currency float-right">
+            <li>
+              <a href="">ENG</a>
+            </li>
+            <li>
+              <a href="">USD</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <img src="img/footer/logo.png" alt="logo">
+        </div>
+        <div class="col-md-7">
+          <div class="nav">
+            <ul>
+              <li class="navshow">
+                <a href="">HOME</a>
+              </li>
+              <li class="navshow">
+                <a href="">SHOP</a>
+              </li>
+              <li class="navshow">
+                <a href="">PAGES</a>
+              </li>
+              <li class="navshow">
+                <a href="">BLOG</a>
+              </li>
+              <li class="navshow">
+                <a href="">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="img/1.png" style="height:30px;" />
+            </div>
+            <div class="col-md-6">
+              <img src="img/2.png" style="height:30px;" />
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="banner">
+    <div class="swiper-container">
+      <!-- <div class="swiper-scrollbar"></div> -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/banner1/bg-1.jpg" /></div>
+        <div class="swiper-slide"><img src="img/banner1/bg-2.jpg" /></div>
+        <div class="swiper-slide"><img src="img/banner1/bg-1.jpg" /></div>
+        <div class="swiper-slide"><img src="img/banner1/bg-2.jpg" /></div>
+        <!-- <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div> -->
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <script>
+      var swiper = new Swiper({
+        el: '.swiper-container',
+        initialSlide: 2,
+        spaceBetween: 50,
+        slidesPerView: 2,
+        centeredSlides: true,
+        slideToClickedSlide: true,
+        grabCursor: true,
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+        mousewheel: {
+          enabled: true,
+        },
+        keyboard: {
+          enabled: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+  </div>
+  <div class="banner_bottom">
+    <div class="container">
+      <div class="row">
+        <div class="float-right col-md-6">
+          <div class="banner_bottom1">
+            <h1>
+              Daniel<br />
+              Wellington<br />
+              Collection.
+            </h1>
+            <div class="banner_bottom1nav">
+              <a>SHOP COLLECTION </a>
+              <a>ALL WATCHES </a>
+            </div>
+          </div>
+        </div>
+        <div class="float-left col-md-6">
+          <div class="banner_bottom2">
+            <h1>
+              Daniel<br />
+              Wellington<br />
+              Collection.
+            </h1>
+            <div class="banner_bottom2nav">
+              <a>VIEW THE PACK </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="newArrival">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <ul class="newArrival_list">
+              <li>
+                <a>New Arrival</a>
+              </li>
+              <li>
+                <a style="color:darkgray">Best Seller</a>
+              </li>
+              <li>
+                <a style="color:darkgray">Most Wanted</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="goods">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="menswear">
+              <div class="menswear_img">
+                <img src="img/product/1 (1).jpg">
+              </div>
+              <div class="menswear_word">
+                <div class="menswear_word1">
+                  <h1>Stripped Wool</h1>
+                  <p>$ 46</p>
+                </div>
+                <div class="menswear_word2">
+                  <p>Mens wear</p>
+                  <img src="img/star1.png">
+                </div>
+                <div class="goodhidden">
+                  <div class="bgc">
+                    <p></p>
+                  </div>
+                  <p>Size:XS S M L XL XXL</p>
+                  <div class="goodhidden_color">
+                    <h1>Colors:</h1>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="menswear">
+              <div class="menswear_img">
+                <img src="img/product/2.jpg">
+              </div>
+              <div class="menswear_word">
+                <div class="menswear_word1">
+                  <h1>Cotton Maflar </h1>
+                  <p>$ 15</p>
+                </div>
+                <div class="menswear_word2">
+                  <p>Trendy </p>
+                  <img src="img/star2.png">
+                </div>
+                <div class="goodhidden">
+                  <div class="bgc">
+                    <p></p>
+                  </div>
+                  <p>Size:XS S M L XL XXL</p>
+                  <div class="goodhidden_color">
+                    <h1>Colors:</h1>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="menswear">
+              <div class="menswear_img">
+                <img src="img/product/3.jpg">
+              </div>
+              <div class="menswear_word">
+                <div class="menswear_word1">
+                  <h1>Goldy Head Pair</h1>
+                  <p>$ 99</p>
+                </div>
+                <div class="menswear_word2">
+                  <p>Gadget</p>
+                  <img src="img/star3.png">
+                </div>
+                <div class="goodhidden">
+                  <div class="bgc">
+                    <p></p>
+                  </div>
+                  <p>Size:XS S M L XL XXL</p>
+                  <div class="goodhidden_color">
+                    <h1>Colors:</h1>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="menswear">
+              <div class="menswear_img">
+                <img src="img/product/1 (1).jpg">
+              </div>
+              <div class="menswear_word">
+                <div class="menswear_word1">
+                  <h1>Stripped Wool</h1>
+                  <p>$ 46</p>
+                </div>
+                <div class="menswear_word2">
+                  <p>Mens wear</p>
+                  <img src="img/star1.png">
+                </div>
+                <div class="goodhidden">
+                  <div class="bgc">
+                    <p></p>
+                  </div>
+                  <p>Size:XS S M L XL XXL</p>
+                  <div class="goodhidden_color">
+                    <h1>Colors:</h1>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="sale">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="sale_contenttop1">
+                  <img src="img/offers/1.jpg">
+                  <div class="positiontop1">
+                    <h1>Live with <br />Style</h1>
+                    <p>All New 2016 <br />Leather Bag Collections</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="sale_contenttop2">
+                  <img src="img/offers/2.jpg">
+                  <div class="positiontop2">
+                    <h1>SALE</h1>
+                    <p>Lorem ipsum dolor sit amet, <br />consectetur adipisicing elit, sed do<br /> eiusmod
+                      incididunt ut labore
+                      et aliqua.</p>
+                    <a href="#">SHOP NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" style="padding-top: 7px;">
+              <div class="col-md-12">
+                <div class="salebanner">
+                  <img src="img/offers/3.jpg" style="width: 100%;">
+                  <div class="position_salebanner">
+                    <h2>New Collection</h2>
+                    <h1>#Newarrivals</h1>
+                    <p>Ready to rock?</p>
+                    <a href="#">Discover</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <div class="sale_contentright_word">
+              <img src="img/offers/4.jpg" style="width: 100%;" />
+              <div class="txt">
+                <h6>hot deals</h6>
+                <h1>Red Velvet <br />Women <br />Shoes</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut
+                  labore et aliqua.</p>
+                <a href="#">See Collections</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content_banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="content_banner1">
+              <img src="img/banner/1.jpg" />
+              <div class="content_banner1_txt">
+                <h6>Special Collection</h6>
+                <p>For this</p>
+                <h1><i>Christmas</i></h1>
+                <a href="#">See Collections</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="content_banner2">
+              <img src="img/banner/2.jpg" />
+              <div class="content_banner2_txt">
+                <h6>coming this</h6>
+                <h1>winter</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                  doloremque laudantium,</p>
+                <a href="#">Discover</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="newArrival">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <ul class="newArrival_list">
+              <li>
+                <a>Top Rated Product</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="goods">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="menswear">
+              <div class="menswear_img">
+                <img src="img/product/5.jpg">
+              </div>
+              <div class="menswear_word">
+                <div class="menswear_word1">
+                  <h1>Stripped Wool</h1>
+                  <p>$ 46</p>
+                </div>
+                <div class="menswear_word2">
+                  <p>Mens wear</p>
+                  <img src="img/star1.png">
+                </div>
+                <div class="goodhidden">
+                  <div class="bgc">
+                    <p></p>
+                  </div>
+                  <p>Size:XS S M L XL XXL</p>
+                  <div class="goodhidden_color">
+                    <h1>Colors:</h1>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="menswear">
+              <div class="menswear_img">
+                <img src="img/product/6.jpg">
+              </div>
+              <div class="menswear_word">
+                <div class="menswear_word1">
+                  <h1>Settle Jute Bag </h1>
+                  <p>$256</p>
+                </div>
+                <div class="menswear_word2">
+                  <p>Utilites </p>
+                  <img src="img/star2.png">
+                </div>
+                <div class="goodhidden">
+                  <div class="bgc">
+                    <p></p>
+                  </div>
+                  <p>Size:XS S M L XL XXL</p>
+                  <div class="goodhidden_color">
+                    <h1>Colors:</h1>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="menswear">
+              <div class="menswear_img">
+                <img src="img/product/7.jpg">
+              </div>
+              <div class="menswear_word">
+                <div class="menswear_word1">
+                  <h1>Settle Jute Bag </h1>
+                  <p>$256</p>
+                </div>
+                <div class="menswear_word2">
+                  <p>Utilites </p>
+                  <img src="img/star2.png">
+                </div>
+                <div class="goodhidden">
+                  <div class="bgc">
+                    <p></p>
+                  </div>
+                  <p>Size:XS S M L XL XXL</p>
+                  <div class="goodhidden_color">
+                    <h1>Colors:</h1>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="menswear">
+              <div class="menswear_img">
+                <img src="img/product/8.jpg">
+              </div>
+              <div class="menswear_word">
+                <div class="menswear_word1">
+                  <h1>Binchotan Mask</h1>
+                  <p>$ 99</p>
+                </div>
+                <div class="menswear_word2">
+                  <p>Beauty</p>
+                  <img src="img/star3.png">
+                </div>
+                <div class="goodhidden">
+                  <div class="bgc">
+                    <p></p>
+                  </div>
+                  <p>Size:XS S M L XL XXL</p>
+                  <div class="goodhidden_color">
+                    <h1>Colors:</h1>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blank">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <a>
+              from the blog
+            </a>
+          </div>
+        </div>
+        <div class="row" style="padding-top: 60px;">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="blog_left">
+                  <img src="img/blog/1.jpg" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="blog_left_txt">
+                  <h6>December 26, 2015</h6>
+                  <h1>Milan Fashion Week 2015</h1>
+                  <p>Lorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod empor incididunt oloremque
+                    laudantium, Eos qui ratione voluptatem sequi. Neque porro quisquam est, et dolore. </p>
+                  <span>By</span>
+                  <a> Kevin Smith</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="blog_left">
+                  <img src="img/blog/2.jpg" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="blog_left_txt">
+                  <h6>December 15, 2015</h6>
+                  <h1>BeSpoked, BeBold, BeWitched</h1>
+                  <p>Lorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod empor incididunt oloremque
+                    laudantium, Eos qui ratione voluptatem sequi. Neque porro quisquam est, et dolore. </p>
+                  <span>By</span>
+                  <a> Kevin Smith</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="email">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- <img src="img/footer/subscribe-bg.jpg" /> -->
+            <div class="email_content">
+              <h1>
+                Get Notified of any offers!
+              </h1>
+              <p>Subscribe to our Newsletter to be notified about promotions</p>
+              <div class="form">
+                <form action="#" id="form_content">
+                  <input type="text" placeholder="Your email address">
+                  <input type="submit" value="submit">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="brands">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="brands_content_left">
+                  <h1>Top Brands</h1>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="brands_content_right">
+                  <img src="img/brands/1.png" />
+                  <img src="img/brands/2.png" />
+                  <img src="img/brands/1.png" />
+                  <img src="img/brands/2.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="footer_content_left">
+                  <div class="footer_logo">
+                    <img src="img/footer/footer-logo.png" /></div>
+                  <p>Lorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod empor incididunt oloremque
+                    laudantium,</p>
+                  <div class="footer_img">
+                    <img src="img/footerimg/1.png" />
+                    <img src="img/footerimg/2.png" />
+                    <img src="img/footerimg/3.png" />
+                  </div>
+                  <div class="footer_img">
+                    <img src="img/footerimg/4.png" /></div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer_content_center1">
+                  <h1>address</h1>
+                  <p>1025-1035 Park Ave, <br />New York, <br />NY 10028, USA</p>
+                  <p>+1 123-456-7890</p>
+                  <p>sales@koolinc.com</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer_content_center2">
+                  <h1>collection</h1>
+                  <p>Men</p>
+                  <p>Women</p>
+                  <p>Kids</p>
+                  <p>Accessories</p>
+                  <p>Sale</p>
+                  <p>Coming Soon</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer_content_center2">
+                  <h1>shop</h1>
+                  <p>About Us</p>
+                  <p>Shipping Methods</p>
+                  <p>Career</p>
+                  <p>Contact</p>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_last_content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-5">
+              <p>© 2016
+                <a>wilylab</a>
+                . All Rights Reserved
+              </p>
+
+            </div>
+            <div class="col-md-7 ">
+
+              <img src="img/payment.png" />
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</body>
+
+</html>

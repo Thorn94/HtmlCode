@@ -1,0 +1,225 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        window.onload = function () {
+            /*720代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是
+              为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
+            getRem(720, 100)
+        };
+        window.onresize = function () {
+            getRem(720, 100)
+        };
+        function getRem(pwidth, prem) {
+            var html = document.getElementsByTagName("html")[0];
+            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+            html.style.fontSize = oWidth / pwidth * prem + "px";
+        }
+    </script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>投资页</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_top">
+            <div class="back">
+                <a href="../home/index.html">
+                <img src="../img/jian.png" alt="jiantou"></a>
+            </div>
+            <div class="title">
+                <h3>项目详情</h3>
+            </div>
+        </div>
+    </div>
+    <div class="occupy">
+        <div class="header_bottom">
+            <p>韩女士借款18.7万元 合同20161122-A</p>
+            <div class="header_bottom_text">
+                <div class="text_left">
+                    <p>年化收益</p>
+                    <h3><span>10.00</span>%</h3>
+                </div>
+                <div class="text_right">
+                    <p>投资期限</p>
+                    <h3><span>3</span>个月</h3>
+                </div>
+            </div>
+        </div>
+        <div class="details">
+            <div class="list">
+                <ul>
+                    <li>
+                        <p>金额</p>
+                        <h5>￥<span>18.70万</span></h5>
+                    </li>
+                    <li>
+                        <p>可投金额</p>
+                        <h5>￥<span>13.83万</span></h5>
+                    </li>
+                    <li>
+                        <p>起投金额</p>
+                        <h5>￥<span>500</span></h5>
+                    </li>
+                    <li class="redbl">
+                        <span>
+                            <img src="../img/redbl.png" alt="redbl" height="50%;">
+                            <p>50%</p>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="blank"></div>
+        <div class="main">
+            <div class="main_content">
+                <ul>
+                    <li>
+                        <span>标的类型</span>
+                        <img src="../img/biao.png" alt="biao">
+                        <img src="../img/biao2.png" alt="biao2">
+                    </li>
+                    <li>
+                        <span>还款方式</span>
+                        <span style="color:darkgray;float: right">一次性还款</span>
+                    </li>
+                    <li>
+                        <span>借款用途</span>
+                        <span style="color:darkgray;float: right">生意周转</span>
+                    </li>
+                    <li>
+                        <span>投标奖励</span>
+                        <span style="color:darkgray;float: right">0.00%</span>
+                    </li>
+                    <li style="border-bottom:none;">
+                        <span>剩余时间</span>
+                        <span style="color:#3DB1FA;float: right">2天20时50分42秒</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="blank"></div>
+            <div class="change">
+                <ul id="changes">
+                    <li class="change_in"><p class="selected">借入描述</p></li>
+                    <li class="change_note"> <p>投标记录</p></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="blank"></div>
+        <div class="display">
+            <div class="change_infor">
+                <dl class="change_infor_txt">
+                    <dt>借款人信息</dt>
+                    <dd>1.姓名：王** 年龄：27 籍贯：浙江江山
+                        <br>2.借款说明：临时周转，以本人自己车辆抵押贷款25万元，一个月后归还。
+                    </dd>
+                </dl>
+                <dl class="change_infor_txt">
+                    <dt>车辆信息</dt>
+                    <dd>车辆品牌：福特蒙迪欧 公里数：96000公里 裸车价格：23.6万 二手车评估价格：9.5万
+                    </dd>
+                </dl>
+            </div>
+            <div class="cars">
+                <img src="../img/1.jpg" alt="car1">
+                <img src="../img/2.jpg" alt="car2">
+                <img src="../img/3.jpg" alt="car3">
+                <img src="../img/4.jpg" alt="car4">
+            </div>
+            <div class="return_money">
+                还款信用
+            </div>
+            <div class="return">
+                <table border="1">
+                    <tbody>
+                        <tr>
+                            <th>借款次数</th>
+                            <th>还款次数</th>
+                            <th>待还款数</th>
+                            <th>逾期次数</th>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="blank"></div>
+        </div>
+        <div class="change_note_infor">
+            <table border="1">
+                <tr>
+                    <th>投资人</th>
+                    <th>投资金融</th>
+                    <th>投资方式</th>
+                    <th>投标时间</th>
+                </tr>
+                <tr>
+                    <td>萝卜...</td>
+                    <td>￥20,252.00</td>
+                    <td>手动</td>
+                    <td>2016-07-24 08:14</td>
+                </tr>
+                <tr>
+                    <td>萝卜...</td>
+                    <td>￥20,252.00</td>
+                    <td>手动</td>
+                    <td>2016-07-24 08:14</td>
+                </tr>
+                <tr>
+                    <td>萝卜...</td>
+                    <td>￥20,252.00</td>
+                    <td>手动</td>
+                    <td>2016-07-24 08:14</td>
+                </tr>
+                <tr>
+                    <td>萝卜...</td>
+                    <td>￥20,252.00</td>
+                    <td>手动</td>
+                    <td>2016-07-24 08:14</td>
+                </tr>
+                <tr>
+                    <td>萝卜...</td>
+                    <td>￥20,252.00</td>
+                    <td>手动</td>
+                    <td>2016-07-24 08:14</td>
+                </tr>
+                <tr>
+                    <td>萝卜...</td>
+                    <td>￥20,252.00</td>
+                    <td>手动</td>
+                    <td>2016-07-24 08:14</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="#">立即投标</a>
+    </div>
+    <script>
+    $(document).ready(function(){
+        $(".change_in").click(function(){
+            $(".display").show();
+            $(".change_note_infor").hide();
+        });
+        $(".change_note").click(function(){
+            $(".display").hide();
+            $(".change_note_infor").show();
+        });
+        $("ul#changes li").click(function(){
+            $(this).addClass("selected").siblings().removeClass("selected");
+        });
+    });
+    </script>
+</body>
+
+</html>

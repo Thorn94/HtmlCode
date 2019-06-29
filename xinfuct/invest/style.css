@@ -1,0 +1,26 @@
+.json_nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    background-color: red;
+}
+
+.json_nav_list{
+    width: 100%;
+    height: 1rem;
+    list-style-type: none;
+}
+.json_nav_list li{
+    width: 25%;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    float: left;
+    color: black;
+    font-size: 0.35rem;
+}
+.json_nav_active{
+    color: #3DB1FA !important;
+}

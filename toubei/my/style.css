@@ -1,0 +1,138 @@
+body{
+    margin-bottom: 1.5rem;
+}
+.header{
+    width: 100%;
+    height: 4.5rem;
+    
+    position: relative;
+    background-color: #2196F3;
+}
+.header_top{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    text-align: center;   
+}
+.header_top p{
+    font-size: 0.35rem;
+    color: white;
+}
+.header_main{
+    width: 100%;
+    padding-top: 0.5rem;
+}
+.header_main ul{
+    width: 94%;
+    margin: 0 3%;
+}
+.header_main li{
+    float: left;
+    width: 33.33%;
+    color: white;
+    font-size: 0.3rem;
+}
+.absolute{
+    width: 100%;
+    position: absolute;
+    top: 4rem;
+}
+.card{
+    width: 94%;
+    border-radius: 0.1rem;
+    height: 1.5rem;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 5px 1px 10px #2196F3;
+}
+.card_list{
+    width: 100%;
+}
+.card_list li{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.card_list li img{
+    width: 0.8rem;
+    height: 0.8rem;
+    padding-top: 0.3rem;
+}
+.card_list li span{
+    font-size: 0.4rem;
+    color: black;
+    padding-left: 0.2rem;
+}
+.list{
+    width: 100%;
+    padding-top: 0.2rem;
+}
+.list_nav{
+    width: 94%;
+    margin: 0 3%;
+    display: inline-block;
+}
+.list_nav li{
+    width: 100%;
+    height: 1.5rem;
+    border-bottom: 1px solid #a9a9a969;
+}
+.list_nav li img{
+    width: 0.8rem;
+    height: 0.8rem;
+    padding-top: 0.4rem;
+}
+.list_nav li span{
+    font-size: 0.4rem;
+    line-height: 0.8rem;
+}
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 1.5rem;
+    background-color: white;
+    opacity: 0.5;
+}
+.footer_nav{
+    width: 100%;
+}
+.nav_line{
+    width: 100%;
+    border-top: 1px solid #000000a1;
+}
+ul{
+    display: inline-flex;
+}
+#nav_content{
+    width: 95%;
+    /* margin: 0.1rem 0.15rem; */
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: inline-flex;
+    
+}
+.nav1{
+    width: 25%;
+    padding-top: 0.1rem;
+}
+.nav1 img{
+    padding-left: 0.6rem;
+    width: 0.6rem;
+    height: 0.6rem;
+}
+.nav1 p{
+    padding-top: 0.2rem;
+    font-size: 0.3rem;
+    text-align: center;
+}
+/* .nav1:hover p{
+    color: red;
+    cursor: pointer;
+} */
+ul li.selected{
+   color: red;
+}

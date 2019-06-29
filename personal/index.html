@@ -1,0 +1,235 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    <script>
+        window.onload = function () {
+            /*720代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是
+              为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
+            getRem(720, 100)
+        };
+        window.onresize = function () {
+            getRem(720, 100)
+        };
+        function getRem(pwidth, prem) {
+            var html = document.getElementsByTagName("html")[0];
+            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+            html.style.fontSize = oWidth / pwidth * prem + "px";
+        }
+
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>个人中心</title>
+</head>
+
+<body>
+    <div id="app">
+        <div :class='{header:isHeader}'>
+            <div :class='{infor:isInfor}'>
+                <div :class='{infor_left:isLeft}'>
+                    <img src="img/user.png" alt="user">
+                    <div :class='{person_name:isName}'>
+                        <h1>{{msg}}</h1>
+                        <p>{{msg1}}</p>
+                    </div>
+                </div>
+                <div :class='{infor_right:isRight}'>
+                    <h2>
+                        {{msg2}}
+                    </h2>
+                    <span><img src="img/5.png" alt="img"></span>
+                </div>
+            </div>
+            <div :class='{head_bottom:isHbottom}'>
+                <div :class='{bottom_left:isBleft}'>
+                    <ul :class='{u_list1:list1}'>
+                        <li>
+                            <h3>{{msg3}}</h3>
+                            <p>{{msg4}}</p>
+                        </li>
+                        <li>
+                            <h3>{{msg3}}</h3>
+                            <p>{{msg5}}</p>
+                        </li>
+                        <li>
+                            <h3>{{msg3}}</h3>
+                            <p>{{msg6}}</p>
+                        </li>
+                    </ul>
+                </div>
+                <div :class='{bottom_right:isBright}'>
+                    <div :class='{sign:isSign}'>
+                        <img src="img/7.png" alt="img">
+                        <p>{{msg7}}
+                            <span>{{msg8}}</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div :class='{main:isMain}'>
+            <div :class='{main_txt:isMtxt}'>
+                <ul :class='{main_list:Mlist}'>
+                    <li>
+                        <img src="img/icon-fl-001.png" alt="icon" :class='{img1:isImg1}'>
+                        <span>{{msg9}}</span>
+                        <img src="img/6.png" alt="img" :class='{img2:isImg2}'>
+                    </li>
+                    <li>
+                        <img src="img/icon-fl-002.png" alt="icon" :class='{img1:isImg1}'>
+                        <span>{{msg10}}</span>
+                        <div :class='{li_right:isLright}'>
+                            <p>{{message1}}</p>
+                            <img src="img/6.png" alt="img" :class='{img3:isImg2}'>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/icon-fl-003.png" alt="icon" :class='{img1:isImg1}'>
+                        <span>{{msg11}}</span>
+                        <div :class='{li_right:isLright}'>
+                            <p>{{message2}}</p>
+                            <img src="img/6.png" alt="img" :class='{img3:isImg2}'>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/icon-fl-004.png" alt="icon" :class='{img1:isImg1}'>
+                        <span>{{msg12}}</span>
+                        <img src="img/6.png" alt="img" :class='{img2:isImg2}'>
+                    </li>
+                    <li style="border-bottom:0;">
+                        <img src="img/icon-fl-005.png" alt="icon" :class='{img1:isImg1}'>
+                        <span>{{msg13}}</span>
+                        <img src="img/6.png" alt="img" :class='{img2:isImg2}'>
+                    </li>
+                </ul>
+            </div>
+            <div :class='{blank:isBlank}'>
+            </div>
+            <div :class='{main_txt:isMtxt}'>
+                <ul :class='{main_list:Mlist}'>
+                    <li>
+                        <img src="img/icon-fl-006.png" alt="icon" :class='{img1:isImg1}'>
+                        <span>{{msg14}}</span>
+                        <img src="img/6.png" alt="img" :class='{img2:isImg2}'>
+                    </li>
+                    <li>
+                        <img src="img/icon-fl-007.png" alt="icon" :class='{img1:isImg1}'>
+                        <span>{{msg15}}</span>
+                        <img src="img/6.png" alt="img" :class='{img2:isImg2}'>
+                    </li>
+                    <li>
+                        <img src="img/icon-fl-008.png" alt="icon" :class='{img1:isImg1}'>
+                        <span>{{msg16}}</span>
+                        <img src="img/6.png" alt="img" :class='{img2:isImg2}'>
+                    </li>
+                    <li style="border-bottom:0;">
+                        <img src="img/icon-fl-009.png" alt="icon" :class='{img1:isImg1}'>
+                        <span>{{msg17}}</span>
+                        <img src="img/6.png" alt="img" :class='{img2:isImg2}'>
+                    </li>
+                </ul>
+            </div>
+            <div :class='{blank:isBlank}'>
+            </div>
+            <div :class='{main_txt:isMtxt}'>
+                <ul :class='{main_list:Mlist}'>
+                    <li>
+                        <img src="img/icon-fl-010.png" alt="icon" :class='{img1:isImg1}'>
+                        <span>{{msg18}}</span>
+                        <img src="img/6.png" alt="img" :class='{img2:isImg2}'>
+                    </li>
+                    <li style="border-bottom:0;">
+                        <img src="img/icon-fl-011.png" alt="icon" :class='{img1:isImg1}'>
+                        <span>{{msg19}}</span>
+                        <img src="img/6.png" alt="img" :class='{img2:isImg2}'>
+                    </li>
+                </ul>
+            </div>
+            <div :class='{blank:isBlank}'>
+                </div>
+        </div>
+        <div :class='{footer:isFooter}'>
+            <foot :class="{foot_last:isFoot}">
+                {{content}}
+            </foot>
+        </div>
+    </div>
+
+    <script>
+        Vue.component('foot', {
+            template: '<ul class="footer_list">'
+            + '<li>'
+            + '<img src="img/1.png"/>'
+            + '<p>首页</p>' 
+            +'</li>'
+            + '<li>'
+            + '<img src="img/2.png"/>'
+            + '<p>发现</p>' 
+            +'</li>'
+            + '<li>'
+            + '<img src="img/3.png"/>'
+            + '<p>消息</p>' 
+            +'</li>'
+            + '<li>'
+            + '<img src="img/4.png"/>'
+            + '<p>我的</p>' 
+            +'</li>'
+            +'</ul>',
+        });
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                isHeader: true,
+                isInfor: true,
+                isLeft: true,
+                isRight: true,
+                isName: true,
+                msg: '李振亚',
+                msg1: '7积分',
+                msg2: '个人主页',
+                isHbottom: true,
+                isBleft: true,
+                msg4: '关注',
+                msg3: '129',
+                list1: true,
+                msg5: '粉丝',
+                msg6: '获赞与收藏',
+                isBright: true,
+                msg7: '签到',
+                msg8: '积分+3',
+                isSign: true,
+                isMain: true,
+                isMtxt: true,
+                Mlist: true,
+                msg9: '添加好友',
+                isImg2: true,
+                isImg1: true,
+                msg10: '成为认证会员',
+                isLright: true,
+                message1: '认证后可收费聊天',
+                msg11: '我的钱包',
+                message2: '￥19.99',
+                msg12: '我的求职认领',
+                msg13: '我的开聊被聊',
+                isBlank: true,
+                msg14: '我的关注收藏',
+                msg15: '我的问答',
+                msg16: '我的发布内容',
+                msg17: '我的东家',
+                msg18:'设置与帮助',
+                msg19:'首都网警',
+                isFooter: true,
+                content:null,
+                isFoot: true,
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>

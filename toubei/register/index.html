@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        window.onload = function () {
+            /*720代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是
+              为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
+            getRem(720, 100)
+        };
+        window.onresize = function () {
+            getRem(720, 100)
+        };
+        function getRem(pwidth, prem) {
+            var html = document.getElementsByTagName("html")[0];
+            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+            html.style.fontSize = oWidth / pwidth * prem + "px";
+        }
+    </script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>快速注册</title>
+</head>
+
+<body>
+    <div class="register">
+        <div class="register_bg">
+            <img src="../img/login_bg.png">
+        </div>
+        <div class="content">
+            <div class="header">
+                <div class="icon">
+                    <a href="../login/index.html"><img src="../img/微信图片_20190508161007.png"></a>
+                </div>
+                <div class="login">
+                    <a href="../login/index.html">登录</a>
+                </div>
+            </div>
+            <div class="form">
+                <div class="username">
+                    <input type="text" placeholder="手机号码">
+                </div>
+                <div class="password">
+                    <input type="password" placeholder="密码6-20位字母数字组合" id="change">
+                    <img src="../img/bkj.png" id="img">
+                </div>
+                <div class="password">
+                    <input type="password" placeholder="短信验证码">
+                    <button><span>获取验证码</span></button>
+                </div>
+                <div class="people">
+                    <img src="../img/inviteperson.png">
+                    <span>邀请人账号</span>
+                </div>
+                <div class="hidden">
+                    <input type="text" placeholder="邀请人账号（选填）">
+                </div>
+                <div class="btn">
+                    <button><span>注册</span></button>
+                </div>
+                <p>注册账户表示您同意<a href="#">《投呗注册协议》</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".people").click(function () {
+                $(".hidden").show();
+                $(".people").hide();
+            });
+        });
+    </script>
+    <script>
+        var toggle = true;
+        $("#img").click(function () {
+            if (toggle) {
+                $("#img").attr("src", "../img/kj.png");
+                $("#change").attr("type", "text");
+                toggle = false;
+            } else {
+                $("#img").attr("src", "../img/bkj.png");
+                $("#change").attr("type", "password");
+                toggle = true;
+            }
+        });
+    </script>
+</body>
+
+</html>

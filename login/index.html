@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>考勤通&nbsp;·&nbsp;用数据改变未来</h1>
+    </div>
+    <div class="login">
+        <div class="login_text">
+            <h1>考勤通登录</h1>
+            <div class="form1">
+                <span><img src="img/icon1.png"></span>
+                <input type="text" placeholder="请输入账号" class="name">
+            </div>
+            <div class="form2">
+                <span><img src="img/icon2.png"></span>
+                <input type="text" placeholder="请输入密码" class="password">
+            </div>
+            <div class="form3">
+                <button class="btn">登&nbsp;&nbsp;录</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var name = $(".name").val();
+        var psw = $(".password").val()
+        $(".btn").click(function () {
+            if (name == "" || name == null && psw == "" || psw == null) {
+                alert("输入框不能为空！！!");
+                return
+            }
+        })
+    </script>
+</body>
+
+</html>

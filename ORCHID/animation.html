@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>动画</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            float:right;
+            animation:myFirst 5s;
+            -webkit-animation:myFirst 5s;
+            /* Safari 与 Chrome */
+        }
+
+        @keyframes myFirst {
+            0% {
+                background: red;
+                left: -1000px;
+                top: 0px;
+            }
+            10% {
+                background: red;
+                left: -800px;
+                top: 0px;
+            }
+            20% {
+                background: red;
+                left: -600px;
+                top: 0px;
+            }
+            30% {
+                background: red;
+                left: -400px;
+                top: 0px;
+            }
+            40% {
+                background: red;
+                left: -200px;
+                top: 0px;
+            }
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

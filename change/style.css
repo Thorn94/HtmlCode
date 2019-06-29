@@ -1,0 +1,87 @@
+.header{
+    width: 100%;
+    background-color: white;
+}
+.header_list{
+    width: 100%;
+    height: 1rem;
+    border-bottom: 1px solid darkgray;
+}
+.header_list li{
+    height: 1rem;
+    line-height: 1rem;
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-size: 0.35rem;
+    color: black;
+}
+.push1,.push2,.push3{
+    width: 100%;
+    height: 4rem;
+    background-color: #f6f6f6;
+    display: inline-flex;
+}
+.push_left{
+    width: 50%;
+    height: 4rem;
+}
+.push4{
+    background-color: white;
+    width: 100%;
+    height: 4rem;
+    font-size: 0.35rem;
+    color: black;
+}
+.push_right{
+    width: 100%;
+    height: 4rem;
+}
+.push4 ul{
+    width: 100%;
+    height: 4rem;
+}
+.push4 ul li{
+    width: 100%;
+    padding-left: 0.2rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+.push_left li,.push_right li{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.2rem;
+    color: black;
+    font-size: 0.3rem;
+}
+.push_right{
+    background-color: white;
+    overflow: auto;
+}
+.push_right li{
+    border-bottom: 1px solid #f6f6f6;
+}
+.active{
+    background-color: white;
+}
+.display{
+    display: none;
+}
+.content,.content1,.content2{
+    width: 50%;
+}
+.selected,.select{
+    color: blue !important;
+    border-bottom: 1px solid blue !important;
+}
+.main{
+    width: 100%;
+    height: 4rem;
+}
+.blank{
+    width: 100%;
+    height: 5rem;
+    background-color: rgba(0,0,0,.6);
+}

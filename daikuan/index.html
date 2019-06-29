@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            /*720代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是
+              为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
+            getRem(720, 100)
+        };
+        window.onresize = function () {
+            getRem(720, 100)
+        };
+        function getRem(pwidth, prem) {
+            var html = document.getElementsByTagName("html")[0];
+            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+            html.style.fontSize = oWidth / pwidth * prem + "px";
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_top">
+            <p>北京</p>
+            <div class="logo">
+                <img src="img/logo.png" /></div>
+            <p style="text-align:right;">签到</p>
+        </div>
+        <div class="line">
+        </div>
+        <div class="header_bottom">
+            <div class="img1">
+                <img src="img/icon-top-001.png" />
+                <p>我要贷款</p>
+            </div>
+            <div class="img2">
+                <img src="img/icon-top-002.png" />
+                <p>办信用卡</p>
+            </div>
+            <div class="img3">
+                <img src="img/icon-top-003.png" />
+                <p>查询信用</p>
+            </div>
+        </div>
+    </div>
+    <div class="blank">
+        <div class="blank_txt">
+            <p>最高申请额度（元）</p>
+            <h6>1000~50万
+                <span>预估额度</span>
+            </h6>
+
+        </div>
+    </div>
+    <div class="banner">
+        <h6>帮你拿钱</h6>
+        <div class="banner_box">
+            <div class="banner_box1">
+                <p>一键选贷款<br><span>定制私人贷款</span></p>
+
+            </div>
+            <div class="banner_box2">
+                <p>信用卡贷款<br><span>额度高批款快</span></p>
+
+            </div>
+            <div class="banner_box3">
+                <p>小额贷款<br><span>24小时内放款</span></p>
+            </div>
+        </div>
+        <h6>活动发现</h6>
+        <div class="banner_img">
+            <img src="img/img-ad.png" />
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_img">
+            <div class="footer_img1">
+                <img src="img/1.png"/>
+                <p style="color:blue;">首页</p>
+            </div>
+            <div class="footer_img1">
+                    <img src="img/2.png"/>
+                    <p>资讯</p>
+            </div>
+            <div class="footer_img1">
+                    <img src="img/3.png"/>
+                    <p>论坛</p>
+            </div>
+            <div class="footer_img1">
+                    <img src="img/4.png"/>
+                    <p>账户</p>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+
+</html>

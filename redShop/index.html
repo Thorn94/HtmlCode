@@ -1,0 +1,408 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        window.onload = function () {
+            /*720代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是
+              为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
+            getRem(720, 100)
+        };
+        window.onresize = function () {
+            getRem(720, 100)
+        };
+        function getRem(pwidth, prem) {
+            var html = document.getElementsByTagName("html")[0];
+            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+            html.style.fontSize = oWidth / pwidth * prem + "px";
+        }
+    </script>
+    <link rel="stylesheet" href="Swiper-3.4.2/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>首页</title>
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 2.5rem !important;
+        }
+
+        .swiper-slide {
+            width: 100%;
+        }
+
+        .swiper-container {
+            width: 100%;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 2.5rem;
+        }
+
+        .swiper-pagination-bullet {
+            width: 0.2rem !important;
+            height: 0.2rem !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="form">
+            <img src="img/下载.png" alt="search">
+            <input type="text" class="search" placeholder="零食大礼包">
+        </div>
+    </div>
+    <div class="nav">
+        <ul class="nav_list">
+            <li style="color: red;">推荐</li>
+            <li>金币商城</li>
+            <li>食品饮料</li>
+            <li>男装</li>
+            <li>家用电器</li>
+        </ul>
+    </div>
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-hash="slide1"><img src="img/banner.png" alt="banner"></div>
+                <div class="swiper-slide" data-hash="slide2"><img src="img/banner.png" alt="banner"></div>
+                <div class="swiper-slide" data-hash="slide3"><img src="img/banner.png" alt="banner"></div>
+                <div class="swiper-slide" data-hash="slide4"><img src="img/banner.png" alt="banner"></div>
+                <div class="swiper-slide" data-hash="slide5"><img src="img/banner.png" alt="banner"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+        </div>
+    </div>
+    <div class="nav_bottom">
+        <ul class="nav_bottomlist">
+            <li>
+                <img src="img/下载 (1).png" alt="img">
+                <h1>精选大牌制造商</h1>
+            </li>
+            <li>
+                <img src="img/下载 (2).png" alt="img">
+                <h1 style="padding-left: 0.1rem;">7天无理由退换</h1>
+            </li>
+            <li>
+                <img src="img/下载 (3).png" alt="img">
+                <h1 style="padding-left: 0.2rem;">全场包邮</h1>
+            </li>
+        </ul>
+    </div>
+    <div class="adv">
+        <img src="img/ad-001.png" alt="img">
+    </div>
+    <div class="details">
+        <ul class="top_list" style="padding-top: 0.1rem;">
+            <li>
+                <img src="img/nav-001.png" alt="img">
+                <p>新品秒杀</p>
+            </li>
+            <li>
+                <img src="img/nav-002.png" alt="img">
+                <p>包邮专区</p>
+            </li>
+            <li>
+                <img src="img/nav-003.png" alt="img">
+                <p>全球工厂</p>
+            </li>
+            <li>
+                <img src="img/nav-004.png" alt="img">
+                <p>爱逛街购</p>
+            </li>
+            <li>
+                <img src="img/nav-005.png" alt="img">
+                <p>全球工厂</p>
+            </li>
+        </ul>
+        <ul class="top_list">
+            <li>
+                <img src="img/nav-006.png" alt="img">
+                <p>限时红包</p>
+            </li>
+            <li>
+                <img src="img/nav-007.png" alt="img">
+                <p>赚取赚取</p>
+            </li>
+            <li>
+                <img src="img/nav-008.png" alt="img">
+                <p>抽奖面单</p>
+            </li>
+            <li>
+                <img src="img/nav-009.png" alt="img">
+                <p>零元抢购</p>
+            </li>
+            <li>
+                <img src="img/nav-010.png" alt="img">
+                <p>限时包邮</p>
+            </li>
+        </ul>
+
+    </div>
+    <div class="datails_banner">
+        <img src="img/ad-002.png" alt="img">
+    </div>  
+    <div class="blank">
+    </div>
+    <div class="main">
+        <div class="newgoods">
+            <img src="img/ad-003.png" alt="img">
+        </div>
+        <div class="goods_detail">
+            <div class="left">
+                <img src="img/pd-001.png" alt="img">
+            </div>
+            <div class="right">
+                <p>蒙牛4月产纯牛奶250ml*9盒蒙牛4月产纯牛奶250ml*9盒</p>
+                <h3>限量|新品秒杀价</h3>
+                <h2>
+                    ￥22.99 <span>￥59.99</span>
+                </h2>
+                <div class="shop">
+                    <h4>
+                        已抢123件&nbsp;&nbsp;29%
+                    </h4>
+                    <button class="btn">去抢购</button>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+
+        </div>
+        <div class="goods_detail">
+            <div class="left">
+                <img src="img/pd-002.png" alt="img">
+            </div>
+            <div class="right">
+                <p>蒙牛4月产纯牛奶250ml*9盒蒙牛4月产纯牛奶250ml*9盒</p>
+                <h3>限量|新品秒杀价</h3>
+                <h2>
+                    ￥22.99 <span>￥59.99</span>
+                </h2>
+                <div class="shop">
+                    <h4>
+                        已抢123件&nbsp;&nbsp;29%
+                    </h4>
+                    <button class="btn">去抢购</button>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+        </div>
+        <div class="goods_detail">
+            <div class="left">
+                <img src="img/pd-003.png" alt="img">
+            </div>
+            <div class="right">
+                <p>蒙牛4月产纯牛奶250ml*9盒蒙牛4月产纯牛奶250ml*9盒</p>
+                <h3>限量|新品秒杀价</h3>
+                <h2>
+                    ￥22.99 <span>￥59.99</span>
+                </h2>
+                <div class="shop">
+                    <h4>
+                        已抢123件&nbsp;&nbsp;29%
+                    </h4>
+                    <button class="btn">去抢购</button>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+        </div>
+        <div class="more">
+            <button class="more_btn">查看全部</button>
+            <img src="img/下载 (4).png" alt="img">
+        </div>
+    </div>
+    <div class="main">
+        <div class="newgoods">
+            <img src="img/ad-004.png" alt="img">
+        </div>
+        <div class="goods_detail">
+            <div class="left">
+                <img src="img/pd-005.png" alt="img">
+            </div>
+            <div class="right">
+                <p>蒙牛4月产纯牛奶250ml*9盒蒙牛4月产纯牛奶250ml*9盒</p>
+                <h3>限量|新品秒杀价</h3>
+                <h2>
+                    ￥22.99 <span>￥59.99</span>
+                </h2>
+                <div class="shop">
+                    <h4>
+                        已抢123件&nbsp;&nbsp;29%
+                    </h4>
+                    <button class="btn">去抢购</button>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+
+        </div>
+        <div class="goods_detail">
+            <div class="left">
+                <img src="img/pd-006.png" alt="img">
+            </div>
+            <div class="right">
+                <p>蒙牛4月产纯牛奶250ml*9盒蒙牛4月产纯牛奶250ml*9盒</p>
+                <h3>限量|新品秒杀价</h3>
+                <h2>
+                    ￥22.99 <span>￥59.99</span>
+                </h2>
+                <div class="shop">
+                    <h4>
+                        已抢123件&nbsp;&nbsp;29%
+                    </h4>
+                    <button class="btn">去抢购</button>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+        </div>
+        <div class="goods_detail">
+            <div class="left">
+                <img src="img/pd-007.png" alt="img">
+            </div>
+            <div class="right">
+                <p>蒙牛4月产纯牛奶250ml*9盒蒙牛4月产纯牛奶250ml*9盒</p>
+                <h3>限量|新品秒杀价</h3>
+                <h2>
+                    ￥22.99 <span>￥59.99</span>
+                </h2>
+                <div class="shop">
+                    <h4>
+                        已抢123件&nbsp;&nbsp;29%
+                    </h4>
+                    <button class="btn">去抢购</button>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+        </div>
+        <div class="more">
+            <button class="more_btn">查看全部</button>
+            <img src="img/下载 (4).png" alt="img">
+        </div>
+    </div>
+    <div class="main" style="height: 14.5rem;">
+        <div class="newgoods">
+            <img src="img/ad-005.png" alt="img">
+        </div>
+        <div class="goods_detail">
+            <div class="left">
+                <img src="img/pd-008.png" alt="img">
+            </div>
+            <div class="right">
+                <p>蒙牛4月产纯牛奶250ml*9盒蒙牛4月产纯牛奶250ml*9盒</p>
+                <h3>限量|新品秒杀价</h3>
+                <h2>
+                    ￥22.99 <span>￥59.99</span>
+                </h2>
+                <div class="shop">
+                    <h4>
+                        已抢123件&nbsp;&nbsp;29%
+                    </h4>
+                    <button class="btn">去抢购</button>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+
+        </div>
+        <div class="goods_detail">
+            <div class="left">
+                <img src="img/pd-002.png" alt="img">
+            </div>
+            <div class="right">
+                <p>蒙牛4月产纯牛奶250ml*9盒蒙牛4月产纯牛奶250ml*9盒</p>
+                <h3>限量|新品秒杀价</h3>
+                <h2>
+                    ￥22.99 <span>￥59.99</span>
+                </h2>
+                <div class="shop">
+                    <h4>
+                        已抢123件&nbsp;&nbsp;29%
+                    </h4>
+                    <button class="btn">去抢购</button>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+        </div>
+        <div class="goods_detail">
+            <div class="left">
+                <img src="img/pd-005.png" alt="img">
+            </div>
+            <div class="right">
+                <p>蒙牛4月产纯牛奶250ml*9盒蒙牛4月产纯牛奶250ml*9盒</p>
+                <h3>限量|新品秒杀价</h3>
+                <h2>
+                    ￥22.99 <span>￥59.99</span>
+                </h2>
+                <div class="shop">
+                    <h4>
+                        已抢123件&nbsp;&nbsp;29%
+                    </h4>
+                    <button class="btn">去抢购</button>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+        </div>
+        <div class="more">
+            <button class="more_btn">查看全部</button>
+            <img src="img/下载 (4).png" alt="img">
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="footer_list">
+            <li>
+                <img src="img/下载 (5).png" alt="img">
+                <p style="color: red;">首页</p>
+            </li>
+            <li>
+                <img src="img/下载 (6).png" alt="img">
+                <p>消息</p>
+            </li>
+            <li>
+                <img src="img/下载 (7).png" alt="img">
+                <p>金币</p>
+            </li>
+            <li>
+                <img src="img/下载 (8).png" alt="img">
+                <p>购物车</p>
+            </li>
+            <li>
+                <img src="img/下载 (9).png" alt="img">
+                <p>我的</p>
+            </li>
+        </ul>
+    </div>
+
+
+    <script src="Swiper-3.4.2/dist/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30,
+            hashnav: true,
+            hashnavWatchState: true,
+            loop: true,
+            autoplay:2000
+        });
+    </script>
+</body>
+
+</html>

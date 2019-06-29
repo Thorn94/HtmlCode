@@ -1,0 +1,312 @@
+body{
+    margin-bottom: 0.9rem;
+}
+.header{
+    width: 100%;
+    background-color: #3DB1FA;
+    height: 1rem;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.header_top{
+    width: 95%;
+    height: 0.42rem;
+    padding: 0.2rem 0.2rem;
+    display: inline-flex;
+}
+.back{
+    width: 40%;
+}
+.back img{
+    width: 0.32rem;
+    height: 0.4rem;
+}
+.title{
+    width: 50%;
+}
+.title h3{
+    color: white;
+    font-size: 0.4rem;
+    font-weight: 500;
+}
+.occupy{
+    margin-top: 1rem;
+}
+.header_bottom{
+    width: 100%;
+    height: 2.6215rem;
+    text-align: center;
+    overflow: hidden;
+    background-color: #3DB1FA;
+}
+.header_bottom p{
+    padding: 0.2rem 0;
+    font-size: 0.3rem;
+    color: white;
+    font-weight: 400;
+}
+.header_bottom_text{
+    width: 100%;
+    margin: 0.4rem 0;
+    display: inline-flex;
+    color: white;
+}
+.header_bottom_text p{
+    font-size: 0.29rem;
+}
+.header_bottom_text h3{
+    font-size: 0.29rem;
+    
+    padding-top: 0.1rem;
+}
+.header_bottom_text h3 span{
+    font-size: 0.35rem;
+    font-weight: bold;
+}
+.text_left,.text_right{
+    width: 50%;
+    text-align: center;
+}
+.details{
+    background-color: white;
+    display: inline-flex;
+    width: 100%;
+    height: 1.4752rem;
+    overflow: hidden;
+}
+.list{
+    width: 95%;
+    margin: 0.2rem auto;
+    overflow: hidden;
+}
+.list ul{
+    width: 100%;
+    overflow: hidden;
+}
+.list ul li{
+    width: 25%;
+    
+    float: left;
+}
+.list ul li p{
+    font-size: 0.29rem;
+    text-align: center;
+}
+.list ul li h5{
+    font-size: 0.3rem;
+    color: darkgray;
+    padding-top: 0.4rem;
+    text-align: center;
+}
+.list ul li h5 span{
+    font-size: 0.3rem;
+    color: #3DB1FA;
+}
+.redbl span{
+    display: block;
+    width: 0.9216rem;
+    height: 0.9216rem;
+    background: #e1e1e1;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 4px;
+    border-radius: 50%;
+    border: 2px solid #3DB1FA;
+    overflow: hidden; 
+}
+.redbl span img{
+    display: block;
+    width: 0.9216rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.redbl span p{
+    font-size: 0.3rem;
+    color: #3DB1FA;
+    line-height: 0.8rem;
+}
+.blank{
+    width: 100%;
+    height: 0.25rem;
+    background-color: #a9a9a95c;
+}
+.main{
+    width: 100%;
+}
+.main_content{
+    width: 95%;
+    margin: 0 auto;
+}
+.main_content ul{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.main_content ul li{
+    width: 100%;
+    height: 0.9rem;
+    border-bottom: 1px solid #dcdcdc;
+    overflow: hidden;
+}
+.main_content ul li span{
+    display: block;
+    float: left;
+    line-height: 0.9rem;
+    font-size: 0.3rem;
+    color: #333;
+}
+.main_content ul li img{
+    width: 0.36rem;
+    height: 0.36rem;
+    margin-top: 0.3rem;
+    display: block;
+    float: right;
+}
+.change{
+    width: 100%;
+    height: 1rem;
+    background-color: white;
+    display: inline-flex;
+}
+.change_in p,.change_note p{
+    font-size: 0.35rem;
+    line-height: 1rem;
+}
+.change_in,.change_note{
+    width: 50%;
+    text-align: center;
+}
+.selected{
+    color: #3DB1FA;
+}
+.change_infor{
+    width: 100%;
+    height: auto;
+}
+.change_infor_txt{
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 0.2rem;
+    padding-bottom: 0.1rem;
+}
+.change_infor_txt dt{
+    font-size: 0.3rem;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 0.1rem;
+}
+.change_infor_txt dd{
+    color: darkgray;
+    font-size: 0.25rem;
+    line-height: 0.35rem;
+}
+.cars{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.cars img{
+    display: block;
+    width: 4rem;
+    height: 3rem;
+    float: left;
+    margin: 6px;
+    overflow: hidden;
+}
+.return_money{
+    font-size: 0.3rem;
+    font-weight: bold;
+    color: black;
+    padding-left: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+.return{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 6px;
+}
+.return table{
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #ebebeb;
+}
+.return table tr{
+    border-bottom: 1px solid #ebebeb;
+}
+.return th{
+    font-weight: 100;
+    color: #333;
+    font-size: 0.25rem;
+    border: 1px solid #ebebeb;
+}
+.return td{
+    text-align: center;
+    color: #3DB1FA;
+    border: 1px solid #ebebeb;
+    font-size: 0.25rem;
+}
+.return tbody{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.footer{
+    width: 100%;
+    height: 0.9rem;
+    background-color: #3DB1FA;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.footer a{
+    color: white;
+    font-size: 0.3rem;  
+   line-height: 0.9rem;
+}
+.change_note_infor{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.2rem;
+    padding-top: 0.2rem;
+    overflow: hidden;
+    background-color: white;
+    display: none;
+}
+.change_note_infor table{
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #ebebeb;
+}
+.change_note_infor table tr{
+    border-bottom: 1px solid #ebebeb;
+}
+.change_note_infor th{
+    font-weight: 100;
+    color: #333;
+    font-size: 0.25rem;
+    border: 1px solid #ebebeb;
+}
+.change_note_infor td{
+    text-align: center;
+    color: #3DB1FA;
+    border: 1px solid #ebebeb;
+    font-size: 0.25rem;
+}
+.change ul {
+   display: inline-flex;
+   width: 100%;
+}
+.change li{
+    width: 50%;
+    text-align: center;
+}

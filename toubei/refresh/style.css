@@ -1,0 +1,162 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom:1rem;
+}
+.header{
+    width: 100%;
+    height: 1rem;
+    background-color: orangered;
+    padding: 0.16rem 0;
+}
+.first_list{
+    width: 92%;
+    margin: 0.2rem auto;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    border: 1px solid white;
+    border-radius: 0.1rem;
+}
+.first_list li{
+    width: 25%;
+    border-right: 1px solid white;
+    float: left;
+    font-size: 0.3rem;
+    text-align: center;
+    box-sizing: border-box;
+    color: white;
+}
+.first{
+    background: #fde1df;
+    color: #fd8147;
+}
+.main{
+    width: 100%;
+    height: 2.5rem;
+    background-color: white;
+    margin-top: 0.3rem;
+}
+.main_content{
+    width: 100%;
+    height: 2.5rem;
+   
+}
+.main_top{
+    border-bottom: 1px solid darkgray;
+    height: 0.8rem;
+}
+.main_top h1{
+    color: black;
+    font-size: 0.35rem;
+    padding: 0.2rem;
+    font-weight: bold;
+}
+.main_bottom{
+    width: 100%;
+    height: 1.7rem;
+    padding: 0.2rem;
+}
+.main_bottom li{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+.first_li h3{
+    color: red;
+    font-size: 0.35rem;
+}
+.first_li p{
+    color: darkgrey;
+    font-size: 0.25rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+.second_li span{
+    color: darkgrey;
+    font-size: 0.25rem;
+    padding-right: 0.1rem;
+}
+.second_li p{
+    color: darkgrey;
+    font-size: 0.25rem;
+    padding-top: 0.1rem;
+}
+/* .third_li span{
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    border: 2px solid red;
+} */
+.third_li span p{
+    color: red;
+    line-height: 0.4rem;
+    line-height: 1.3rem;
+}
+.footer{
+    width: 100%;
+    height: 1rem;
+    background-color: #a9a9a959;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.footer_nav{
+    width: 100%;  
+}
+.nav_line{
+    width: 100%;
+    border-top: 1px solid #000000a1;
+}
+
+#nav_content{
+    width: 95%;
+    /* margin: 0.1rem 0.15rem; */
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: inline-flex;
+    
+}
+.nav1{
+    width: 25%;
+}
+.nav1 img{
+    padding-left: 0.6rem;
+    width: 0.46rem;
+    height: 0.45rem;
+}
+.nav1 p{
+    padding-top: 0.1rem;
+    font-size: 0.3rem;
+    text-align: center;
+}
+/* .nav1:hover p{
+    color: red;
+    cursor: pointer;
+} */
+ul li.selected{
+   color: red;
+}
+
+.div{
+    background-color: bisque;
+    width: 100%;
+}
+.to_ifo{
+    font-size: 0.5rem;
+    text-align: center;
+    color: red;
+    padding-top: 0.8rem;
+}
+.ch_name,a{
+    font-size: 0.4rem;
+    text-align: center;
+}
+.content{
+    font-size: 0.4rem;
+    text-align: center;
+    line-height: 0.5rem;
+}

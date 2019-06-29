@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center
+        }
+
+        input.serach {
+            border: 1px solid #ccc;
+            width: 80%;
+            height: 25px;
+            margin: 0px auto;
+            border-radius: 10px;
+            outline: none;
+            padding: 10px;
+            line-height: 25px;
+            font-size: 16px;
+        }
+
+        .content {
+
+
+            margin-top: 30px
+        }
+    </style>
+</head>
+
+<body>
+
+    <input class="serach" type="text" value="" placeholder="serach">
+
+    <div class="content">
+        
+    </div>
+
+    <script>
+    var t = document.querySelector('.serach')
+    var t1 = document.querySelector('.content')
+
+
+    t1.innerHTML = localStorage.t
+
+    t.onkeydown = function(e){ 
+
+    var ev = document.all ? window.event : e;
+    
+    if(ev.keyCode==13) { //回车键 enter
+       
+         localStorage.t = t.value
+         t1.innerHTML = localStorage.t
+     }
+}
+
+    </script>
+</body>
+
+</html>
